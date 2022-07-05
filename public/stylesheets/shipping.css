@@ -45,10 +45,10 @@
 
 .shipping-content {
     background: transparent radial-gradient(farthest-corner at 48% 38%, #FFFFFF 17%, #F9FBFB 45%, #E9EFEF 80%, #DDE7E7 100%);
-    border-top: 5px solid #71797F;
-    border-right: 2px solid #71797F;
-    border-left: 6px solid #71797F;
-    border-bottom: 2px solid #71797F;
+    border-top: 7px solid #808080;
+    border-right: 3px solid #808080;
+    border-left: 10px solid #808080;
+    border-bottom: 3px solid #808080;
     padding: 0% 5%;
     margin-top: 32.1%;
 
