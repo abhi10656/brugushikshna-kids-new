@@ -19,6 +19,12 @@ app.get('/', function(req, res) {
 app.get('/shipping', function(req, res) {
   res.render('pages/shipping');
 });
+app.get('/terms', function(req, res) {
+  res.render('pages/terms');
+});
+app.get('/privacy', function(req, res) {
+  res.render('pages/privacy');
+});
 
 // about page
 app.get('/about', function(req, res) {

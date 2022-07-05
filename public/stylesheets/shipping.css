@@ -72,8 +72,34 @@
 }
 
 .shipping-headingpara {
-    font-size: 17px;
+    font-size: 16px;
     padding-left: 3.5%;
     padding-bottom: 4%;
-    line-height: 1.4;
+    line-height: 1.5;
+}
+
+/* terms */
+.terms-numberheading{
+    color:#015B97;
+    font-size: 28px;
+    padding: 0 0 0 3.5% ;
+}
+.term-content
+{
+    background: transparent radial-gradient(farthest-corner at 48% 38%, #FFFFFF 17%, #F9FBFB 45%, #E9EFEF 80%, #DDE7E7 100%);
+    border-top: 7px solid #808080;
+    border-right: 3px solid #808080;
+    border-left: 10px solid #808080;
+    border-bottom: 3px solid #808080;
+    padding: 0% 5%;
+    margin-top: 32.9%;
+}
+.terms-mainsection {
+    padding: 0% 6%;
+    position: absolute;
+    top: 0;
+    right:0;
+    left:0;
+
+
 }
