@@ -12,5 +12,124 @@
     margin: 0;
     padding: 0;
     font-family: 'Proxima Nova', sans-serif;
-    background-color: bisque;
 }
+
+.sectionBg{
+    background: url('../../assests/home/homeMainBg.svg');
+    height: 100vh;
+    background-size: cover;
+}
+.homeHead{
+    font-family: 'Comic Sans MS';
+    font-size: 53px;
+    color: #000000;
+}
+.homeSection1{
+    width: 60%;
+    padding: 9% 0% 0 5%;
+}
+.homeContent{
+    color: #000000;
+    opacity: 59%;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 2% 24% 4% 0;
+    line-height: 27px;
+}
+.homeSection1>button{
+    border: none;
+    background-color: #F8B361;
+    font-size: 22px;
+    color: #FFFFFF;
+    font-family: 'Comic Sans MS';
+    padding: 1% 6%;
+    border-radius: 13px;
+}
+.homeSection2{
+    padding: 1% 6%;
+}
+.homeHead2{
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    font-size: 32px;
+    padding: 4% 0;
+}
+.section2Content{
+    display: flex;
+}
+.homeImg-section{
+    width: 50%;
+}
+.section2Content>div:nth-of-type(1)>img{
+    width: 88%;
+}
+.section2imgContent {
+    display: flex;
+    margin: 0 0 5%;
+}
+.section2SubContent>p:nth-of-type(1){
+    color: #000000;
+    font-weight: 600;
+    font-size: 21px;
+
+}
+.section2SubContent>p:nth-of-type(2){
+    color: #000000;
+    opacity: 59%;
+    font-size: 17px;  
+    margin: 1% 16% 0% 0;
+}
+.section2img>img{
+    width: 100%;
+}
+.section2SubContent {
+    padding: 0 0 0 4%;
+}
+
+/* ------------section3------------------ */
+
+.section3-sub {
+    display: flex;
+    justify-content: center;
+}
+.section3Details{
+    display: flex;  
+    margin: 0 0 7%;
+}
+
+.sectin3self>p:nth-of-type(1){
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+.sectin3self>p:nth-of-type(2){
+    color: #000000;
+    opacity: 59%;
+    margin: 4% 0 0;
+    font-size: 13px;
+}
+.section3Content{
+    width: 30%;
+}
+.section3child{
+    width: 100%;
+}
+.sectin3self{
+    padding: 4% 18% 0 4%;
+}
+.numberFour{
+    text-align: right;
+    padding: 4% 4% 0 18%;
+}
+.homeSection3{
+    margin: 2% 0;
+}
+/* .section3ImgDetail>img{
+    width: 100%;
+} */
+
+
+
+
+
