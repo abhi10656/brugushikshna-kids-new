@@ -8,9 +8,16 @@ app.set('view engine', 'ejs');
 // use res.render to load up an ejs view file
 app.use(express.static(__dirname + '/public'));
 
+app.use(express.static(__dirname + '/public'));
+
+
+
 // index page
 app.get('/', function(req, res) {
   res.render('pages/home');
+});
+app.get('/shipping', function(req, res) {
+  res.render('pages/shipping');
 });
 
 // about page
