@@ -11,6 +11,9 @@ app.set('view engine', 'ejs');
 app.get('/', function(req, res) {
   res.render('pages/home');
 });
+app.get('/shipping', function(req, res) {
+  res.render('pages/shipping');
+});
 
 // about page
 app.get('/about', function(req, res) {
