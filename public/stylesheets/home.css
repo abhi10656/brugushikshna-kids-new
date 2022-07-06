@@ -14,10 +14,13 @@
     font-family: 'Proxima Nova', sans-serif;
 }
 
-
+.homeMain {
+    position: relative;
+    padding: 7% 0 0;
+}
 .sectionBg{
     background: url('../../assests/home/homeMainBg.svg');
-    height: 100vh;
+    /* height: 100vh; */
     background-size: cover;
 }
 .homeHead{
@@ -27,7 +30,7 @@
 }
 .homeSection1{
     width: 60%;
-    padding: 9% 0% 0 5%;
+    padding: 9% 0% 12% 5%;
 }
 .homeContent{
     color: #000000;
@@ -224,6 +227,9 @@
 /* .item .parentCard.active{
     transform: scale(1.5);
 } */
+.section6carousel .owl-item.center{
+    transform: scale(1.15);
+}
 
 .parentDetails>h5{
     color: #000000;
