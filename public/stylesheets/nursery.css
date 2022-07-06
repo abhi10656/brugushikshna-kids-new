@@ -1,0 +1,223 @@
+@font-face {
+    font-family: Proxima Nova;
+    src: url("../fonts/Proxima-Nova-Font/Proxima\ Nova\ Font.otf");
+}
+
+@font-face {
+    font-family: Comic Sans MS;
+    src: url("../fonts/comic-sans-ms/COMIC.TTF");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Proxima Nova', sans-serif;
+
+}
+/* section1 */
+
+.nursery-container {
+    background-image: url("../../assests/nurseryinnerpage/section1img.png");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+}
+
+.nursery-sec1mainheadings {
+    padding: 9% 0% 0% 5%;
+}
+
+.nursery-sec1heading {
+    font-family: 'Comic Sans MS';
+    font-size: 35px;
+    padding: 0% 58% 0% 0%;
+    -webkit-text-stroke-width: thin;
+}
+
+.nursery-sec1para {
+    font-size: 15px;
+    padding: 3% 61% 3% 0%;
+    opacity: 59%;
+    line-height: 1.3;
+}
+
+.nursery-sec1button {
+    font-family: 'Comic Sans MS';
+    font-size: 20px;
+    color: #fff;
+    background-color: #F8B361;
+    padding: 11px 0;
+    border-radius: 10px;
+    border: none;
+    width: 12%;
+
+}
+/* section2 */
+.nursery-sec2parentbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: -5% 0% 5% 0%;
+
+}
+
+.nursery-sec2button1 {
+    background-color: #FC7E82;
+}
+
+.nursery-sec2button1,
+.nursery-sec2button2,
+.nursery-sec2button3,
+.nursery-sec2button4 {
+    padding: 10px 0px;
+    width: 10%;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Comic Sans MS';
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.nursery-sec2button2 {
+    background-color: #FAC800;
+}
+
+.nursery-sec2button3 {
+    background-color: #7B61F8;
+}
+
+.nursery-sec2button4 {
+    background-color: #26BC0F;
+}
+
+.nursery-sec2maincards {
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+
+}
+
+.sec2img1 {
+    width: 18%
+}
+
+/* section3 */
+.nursery-sec3maincontainer
+{
+    border: 2px solid #EAEAE9;
+    border-radius: 10px;
+    margin: 5% 8%;
+  
+    
+}
+.nursery-sec3img
+{
+    width: 28%;
+}
+
+.nursery-sec3container
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nursery-sec3heading
+{
+    text-align: center;
+    -webkit-text-stroke-width: thin;
+    font-size: 23px;
+    font-family: 'Comic Sans MS';
+    padding: 3% 0 5% 0;
+
+}
+
+.nursery-sec3childcontent
+{
+    display: flex;
+    width:100%;
+    padding-bottom: 4%;
+    gap: 3%;
+    align-items: center;
+}
+.nursery-sec3para
+{
+    font-size: 15px;
+    font-weight: 600;
+    padding-right:10%;
+    line-height: 1.3;
+}
+.nursery-sec3numbers
+{
+    width: 8%;
+    
+}
+/* section4 */
+.nursery-sec4container
+{
+    background-image: url("../../assests/nurseryinnerpage/section4img.png");
+    width: 100%;
+    height:50vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.nursery-sec4maincontainer
+{
+    margin: 5% 8% ;
+}
+.nursery-sec4heading
+{
+    font-family: 'Comic Sans MS';
+    font-size: 25px;
+    -webkit-text-stroke-width: thin;
+    padding: 5% 53% 0% 7%;
+
+}
+.nursery-sec4para
+{
+    padding: 1% 47% 2% 7%;
+    font-size: 13px;
+    line-height: 1.3;
+    letter-spacing: 0px;
+}
+.nursery-sec4parentprice
+{
+    display: flex;
+    gap: 2%;
+    padding: 0 0 0 7%;
+    margin: 0 0 2% 0;
+}
+.nursery-sec4price
+{
+    color:#4DD42B;
+}
+.nursery-sec4notprice
+{
+    text-decoration:line-through #FF0000  5px;
+
+}
+.nursery-sec4price,.nursery-sec4notprice
+{
+    font-size: 25px;
+    -webkit-text-stroke-width: thin;
+}
+.nursery-sec4button
+{
+    background-color: #FF8A00;
+    font-family: 'Comic Sans MS';
+    border: none;
+    color: #fff;
+    width: 14%;
+    margin: 0 0 0 7%;
+    padding: 1% 0%;
+    border-radius: 10px;
+    font-size: 22px;
+}

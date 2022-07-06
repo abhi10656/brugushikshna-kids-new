@@ -25,6 +25,9 @@ app.get('/terms', function(req, res) {
 app.get('/privacy', function(req, res) {
   res.render('pages/privacy');
 });
+app.get('/nursery', function(req, res) {
+  res.render('innerpages/nursery');
+});
 
 // about page
 app.get('/about', function(req, res) {
