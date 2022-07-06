@@ -14,6 +14,7 @@
     font-family: 'Proxima Nova', sans-serif;
 }
 
+
 .sectionBg{
     background: url('../../assests/home/homeMainBg.svg');
     height: 100vh;
@@ -91,6 +92,7 @@
 .section3-sub {
     display: flex;
     justify-content: center;
+    margin: 4% 0 0;
 }
 .section3Details{
     display: flex;  
@@ -125,9 +127,132 @@
 .homeSection3{
     margin: 2% 0;
 }
-/* .section3ImgDetail>img{
-    width: 100%;
+.section3ImgDetail>img {
+    width: 70px;
+    height: 70px;
+}
+.homeSection4{
+    padding: 0 5%;
+    margin: 6% 0;
+}
+.section4board{
+    background-image: url('../../assests/home/blackboard.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 0 0 8%;
+}
+.section4grades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: space-evenly;
+}
+.eachGrade{
+    width: 23%;
+    margin: 0 0 3%;
+    padding: 1% 0 2%;
+    border-radius: 14px;
+}
+.eachGradeimg>img{
+    width: 152px;
+    height: 155px;
+}
+.eachGrade>p{
+    color: #000000;
+    font-size: 22px;
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    text-align: center;
+    padding: 7% 0;
+}
+.eachGradeimg {
+    text-align: center;
+}
+
+/* -------section5------------- */
+
+.section5Content>p:nth-of-type(1){
+    color: #000000;
+    font-weight: 700;
+    font-size: 21px;
+}
+.section5Content>p:nth-of-type(2){
+    color: #000000;
+    opacity: 59%;
+    font-size: 15px;
+    margin: 5% 12% 0;
+}
+
+
+.section5-sub {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0 3%;
+}
+.section5Journey {
+    width: 30%;
+    text-align: center;
+    padding: 0 2%;
+}
+.section5img>img{
+    width: 60%;
+    height: 320px;
+}
+.section5Content {
+    margin: 4% 0 0;
+}
+
+/* -----------section6---------------- */
+
+.section6carousel {
+    padding: 2% 5%;
+}
+.section6carousel .owl-carousel .owl-item .parentImg img{
+    width: 88%;
+}
+.parentImg{
+    width: 50%;
+}
+.parentCard{
+    display: flex;
+    box-shadow: 0px 3px 15px #00000029;
+    width: 90%;
+    margin: 7% auto;
+    padding: 6% 3%;
+    border-radius: 15px;
+}
+/* .item .parentCard.active{
+    transform: scale(1.5);
 } */
+
+.parentDetails>h5{
+    color: #000000;
+    font-weight: 700;
+    font-size: 21px;
+}
+.parentDetails>p:nth-of-type(1){
+    color: #000000;
+    font-size: 15px;
+    margin: 3% 0 8%;
+}
+.parentDetails>p:nth-of-type(2){
+    color: #000000;
+    opacity: 69%;
+    font-size: 13px;
+    margin: 0 0 5%;
+}
+.parentDetails>p:nth-of-type(3){
+    color: #000000;
+    font-size: 15px;
+    line-height: 19px;
+}
+.parentDetails {
+    width: 50%;
+    padding: 7% 0%;
+}
+
+
+
 
 
 
