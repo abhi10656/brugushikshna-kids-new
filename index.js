@@ -28,6 +28,9 @@ app.get('/privacy', function(req, res) {
 app.get('/nursery', function(req, res) {
   res.render('innerpages/nursery');
 });
+app.get('/about', function(req, res) {
+  res.render('pages/about');
+});
 
 // about page
 app.get('/about', function(req, res) {

@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Proxima Nova;
+    src: url("../fonts/Proxima-Nova-Font/Proxima\ Nova\ Font.otf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+.about-maincontainer
+{
+    padding: 2%;
+    margin: 5% 5% 0 5%;
+
+    background: linear-gradient(253deg, #00A0FD80 60%, #FFFFFF80 100%);
+}
+.about-sec1main
+{
+    display: flex;
+    gap:5%;
+    align-items: center;
+}
+.about-sec1img
+{
+    
+    width: 55%;
+
+}
+.about-sec1parentcontents
+{
+    text-align: right;
+}
+
+.about-sec1heading
+{
+    font-size: 28px;
+    font-weight: 900;
+    width: 70%;
+    -webkit-text-stroke-width: thin;
+}
+.about-sec1para
+{
+    font-size: 12px;
+    opacity: 59%;
+    padding: 5% 28% 0 0;
+    
+}
+/* section2 */
+.about-sec2parent
+{
+    padding: 3% 8%;
+}
+.about-sec2maincontainer
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-sec2container
+{
+    width: 50%;
+}
+.about-sec2heading
+{
+    opacity: 42%;
+    font-size: 16px;
+    font-weight: 900;
+    -webkit-text-stroke-width: thin;
+}
+.about-sec2heading2
+{
+    font-size: 16px;
+    font-weight: 900;
+    -webkit-text-stroke-width: thin;
+    padding: 2% 0%;
+}
+.about-sec2para
+{
+    opacity: 93%;
+    font-size: 13px;
+    line-height: 1.3;
+}
+.about-sec2img
+{
+    
+    width: 22%;
+
+}
+
+/* section3 */
+
+.about-sec3heading1
+{
+    font-size: 24px;
+    font-weight: 900;
+    -webkit-text-stroke-width: thin;
+    text-align: center;
+}
+.about-sec3heading2{
+    font-size: 14px;
+    opacity: 93%;
+    padding: 2% 26%;
+    text-align: center;
+}
+.about-sec3cardbackimg
+{
+    background-color:#F97D7D4D;
+}
