@@ -10,102 +10,235 @@
     font-family: 'Proxima Nova', sans-serif;
 }
 
-.about-maincontainer
-{
-    padding: 2%;
-    margin: 5% 5% 0 5%;
+.about-parent {
+    padding: 7% 6% 0 6%;
+}
 
+.about-maincontainer {
+    padding: 2%;
     background: linear-gradient(253deg, #00A0FD80 60%, #FFFFFF80 100%);
 }
-.about-sec1main
-{
+
+.about-sec1main {
     display: flex;
-    gap:5%;
+    gap: 5%;
     align-items: center;
 }
-.about-sec1img
-{
-    
+
+.about-sec1img {
+
     width: 55%;
 
 }
-.about-sec1parentcontents
-{
+
+.about-sec1parentcontents {
     text-align: right;
 }
 
-.about-sec1heading
-{
+.about-sec1heading {
     font-size: 28px;
     font-weight: 900;
-    width: 70%;
+    width: 75%;
     -webkit-text-stroke-width: thin;
 }
-.about-sec1para
-{
+
+.about-sec1para {
     font-size: 12px;
     opacity: 59%;
-    padding: 5% 28% 0 0;
-    
+    padding: 5% 26% 0 0;
+    line-height: 1.3;
+
 }
+
 /* section2 */
-.about-sec2parent
-{
+.about-sec2parent {
     padding: 3% 8%;
 }
-.about-sec2maincontainer
-{
+
+.about-sec2maincontainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.about-sec2container
-{
+
+.about-sec2container {
     width: 50%;
 }
-.about-sec2heading
-{
+
+.about-sec2heading {
     opacity: 42%;
     font-size: 16px;
     font-weight: 900;
     -webkit-text-stroke-width: thin;
 }
-.about-sec2heading2
-{
+
+.about-sec2heading2 {
     font-size: 16px;
     font-weight: 900;
     -webkit-text-stroke-width: thin;
     padding: 2% 0%;
 }
-.about-sec2para
-{
+
+.about-sec2para {
     opacity: 93%;
     font-size: 13px;
     line-height: 1.3;
 }
-.about-sec2img
-{
-    
+
+.about-sec2img {
+
     width: 22%;
 
 }
 
-/* section3 */
+/* section3 and 4*/
+.about-sec3parent,
+.about-sec4parent {
+    margin: 0 0 5% 0;
+}
 
-.about-sec3heading1
-{
+.about-sec3heading1,
+.about-sec4heading1 {
     font-size: 24px;
     font-weight: 900;
     -webkit-text-stroke-width: thin;
     text-align: center;
+    
 }
-.about-sec3heading2{
+
+.about-sec3heading2,
+.about-sec4heading2 {
     font-size: 14px;
     opacity: 93%;
-    padding: 2% 26%;
+    padding: 2% 26% 4% 26%;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.about-sec3parentcards {
+    padding: 0% 5%;
+}
+
+.about-sec3cardbackimg1,
+.about-sec3cardbackimg2,
+.about-sec3cardbackimg3 {
+    padding: 32px;
+    width: 25%;
+    border-radius: 10px;
+}
+
+.about-sec3cardbackimg1 {
+    background-color: #F97D7D4D;
+}
+
+.about-sec3cardbackimg2 {
+    background-color: #99F2764F;
+}
+
+.about-sec3cardbackimg3 {
+    background-color: #F7D77D4A;
+}
+
+.about-sec3cardimg {
+    width: 100%;
+}
+
+.about-sec3cards {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+
+
+.about-sec3cardheading {
+    font-size: 16px;
+    font-weight: 900;
+    -webkit-text-stroke-width: thin;
+    text-align: center;
+    padding: 2% 0% 4% 0%;
+
+
+}
+
+.about-sec3cardpara {
+    opacity: 93%;
+    font-size: 12px;
+    line-height: 1.4;
+
+}
+
+/* section4 */
+
+.about-sec4parentprofile {
+    display: flex;
+justify-content: center;
+}
+
+.about-sec4profilename {
+    font-size: 18px;
+    font-weight: 900;
+    color: #0519D1;
+    padding: 3% 0 0 0%;
+    -webkit-text-stroke-width: thin;
+}
+
+.about-sec4profiles {
     text-align: center;
 }
-.about-sec3cardbackimg
+
+.about-sec4profiledesignation {
+    padding: 3% 0%;
+    font-weight: 600;
+    -webkit-text-stroke-width: thin;
+    font-size: 14px;
+    opacity: 57%;
+
+}
+
+.about-sec4profilediscription {
+    opacity: 93%;
+    font-size: 12px;
+    padding: 0 26%;
+    line-height: 1.3;
+}
+
+.about-sec4img1 {
+    width: 50%;
+}
+
+/* section5 */
+.about-sec5background
 {
-    background-color:#F97D7D4D;
+    background-image: url("../../assests/aboutus/section5.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    padding: 8% 5%;
+}
+.about-sec5parent
+{
+    margin: 5%;
+}
+.about-sec5heading
+{
+    font-weight: 900;
+    -webkit-text-stroke-width: thin;
+    font-size: 20px;
+}
+.about-sec5para
+{
+    opacity: 93%;
+    font-size: 13px;
+    padding: 2% 69% 2% 0;
+}
+.about-sec5button
+{
+    background-color: white;
+    box-shadow: 0px 3px 15px #00000029;
+    border: none;
+    width: 12%;
+    padding: 15px 0%;
+    border-radius: 10px;
+    font-weight: 900;
+    -webkit-text-stroke-width: thin;
 }
