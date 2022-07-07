@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: Proxima Nova;
+            src: url("../fonts/Proxima-Nova-Font/Proxima\ Nova\ Font.otf");
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Proxima Nova', sans-serif;
+        }
+
+        .Faqmain {
+    position: relative;
+    padding: 6% 0 3%;
+        }
+
+        .faqImg {
+            text-align: center;
+        }
+
+        .faqContent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Faqmain>h2 {
+            text-align: center;
+    margin: 4% 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+        
+
+        .faqQ {
+            display: flex;
+    justify-content: space-between;
+    padding: 0 3% 0 0;
+        }
+
+        .quetsion {
+            display: flex;
+            align-items: center;
+            width: 95%;
+        }
+
+        .quetsion>img {
+            width: 55px;
+        }
+        .faqNav{
+            height: 550px;
+            width: 55%;
+            padding: 1% 1%;
+            border-radius: 14px;
+            border: 1px solid #7070704A;
+            box-shadow: 0px 3px 6px #00000029;
+        } 
+        .faqpart {
+            height: 515px;
+    width: 100%;
+    padding: 1% 1%;
+    overflow-y: scroll;
+        }
+
+        .faqImg>img {
+            width: 75%;
+        }
+
+        ::-webkit-scrollbar {
+            width: 2px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #7070707A;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #71B8FF;
+        }
+        .quetsion>p{
+           color: #000000;
+           font-weight: 600;
+           font-size: 18px;
+           margin: 0 0 0 1%;
+
+        }
+        .faqA{  
+            height: 0px;
+            overflow: hidden;
+            margin: 2% auto 0;
+            width: 82%;
+            transition: all 0.3s;
+        }
+        .faqQA.active .faqA{
+            border: 1px solid #707070;
+            border-radius: 5px;
+            
+            padding: 1.5% 1.5%;
+            height: 75px;
+        }
+        .faqQ>img{
+    width: 15px;
+    transition: all 0.5s;
+}
+        .faqQA.active .faqQ>img{
+            transform: rotate(180deg);
+        }
+        .faqA>p{
+            color: #000000;
+          opacity: 59%;
+          font-size: 18px;
+          line-height: 23px;
+        }
+        .faqQA {
+    margin: 0 0 3%;
+}
+
+    </style>
+    <title>Faqs</title>
+</head>
+
+<body>
+    <%- include('../components/nav') %>
+
+    <div class="Faqmain">
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+        <div class="faqContent">
+            <div class="faqImg">
+                <img src="../../assests/faqs/faqgirl.svg" alt="girl">
+            </div>
+                <div class="faqNav">
+                <div class="faqpart">
+                    <div class="faqQA">
+                        <div class="faqQ">
+                            <div class="quetsion">
+                                <img src="../../assests/home/one.svg" alt="one">
+                                <p>Is Brugusikshan applicable to me?</p>
+                            </div>
+                            <img src="../../assests/faqs/downarrow.svg" alt="arrow">
+                        </div>
+                        <div class="faqA">
+                            <p>We are providing the worksheets from Nursery to Grade 5. These worksheets are even
+                                applicable to all category children.</p>
+                        </div>
+                    </div>
+                    <div class="faqQA">
+                        <div class="faqQ">
+                            <div class="quetsion">
+                                <img src="../../assests/home/two.svg" alt="two">
+                                <p>How do I get started with Brugusikshan?</p>
+                            </div>
+                            <img src="../../assests/faqs/downarrow.svg" alt="arrow">
+                        </div>
+                        <div class="faqA">
+                            <p>We are providing the worksheets from Nursery to Grade 5. These worksheets are even
+                                applicable to all category children.</p>
+                        </div>
+                    </div>
+                    <div class="faqQA">
+                        <div class="faqQ">
+                            <div class="quetsion">
+                                <img src="../../assests/home/three.svg" alt="three">
+                                <p>On what basis the worksheets are created?</p>
+                            </div>
+                            <img src="../../assests/faqs/downarrow.svg" alt="arrow">
+                        </div>
+                        <div class="faqA">
+                            <p>We are providing the worksheets from Nursery to Grade 5. These worksheets are even
+                                applicable to all category children.</p>
+                        </div>
+                    </div>
+                    <div class="faqQA">
+                        <div class="faqQ">
+                            <div class="quetsion">
+                                <img src="../../assests/home/four.svg" alt="four">
+                                <p>Can I buy necessary worksheets frequently?</p>
+                            </div>
+                            <img src="../../assests/faqs/downarrow.svg" alt="arrow">
+                        </div>
+                        <div class="faqA">
+                            <p>We are providing the worksheets from Nursery to Grade 5. These worksheets are even
+                                applicable to all category children.</p>
+                        </div>
+                    </div>
+                    <div class="faqQA">
+                        <div class="faqQ">
+                            <div class="quetsion">
+                                <img src="../../assests/home/five.svg" alt="five">
+                                <p>Should I come physically to pick up the worksheet, or the company will provide it to
+                                    the doorstep?</p>
+                            </div>
+                            <img src="../../assests/faqs/downarrow.svg" alt="arrow">
+                        </div>
+                        <div class="faqA">
+                            <p>We are providing the worksheets from Nursery to Grade 5. These worksheets are even
+                                applicable to all category children.</p>
+                        </div>
+                    </div>
+                    <div class="faqQA">
+                        <div class="faqQ">
+                            <div class="quetsion">
+                                <img src="../../assests/home/six.svg" alt="six">
+                                <p>Is Brugusikshan applicable to me?</p>
+                            </div>
+                            <img src="../../assests/faqs/downarrow.svg" alt="arrow">
+                        </div>
+                        <div class="faqA">
+                            <p>We are providing the worksheets from Nursery to Grade 5. These worksheets are even
+                                applicable to all category children.</p>
+                        </div>
+                    </div>
+                    <div class="faqQA">
+                        <div class="faqQ">
+                            <div class="quetsion">
+                                <img src="../../assests/faqs/seven.svg" alt="seven">
+                                <p>Is Brugusikshan applicable to me?</p>
+                            </div>
+                            <img src="../../assests/faqs/downarrow.svg" alt="arrow">
+                        </div>
+                        <div class="faqA">
+                            <p>We are providing the worksheets from Nursery to Grade 5. These worksheets are even
+                                applicable to all category children.</p>
+                        </div>
+                    </div>
+                    <div class="faqQA">
+                        <div class="faqQ">
+                            <div class="quetsion">
+                                <img src="../../assests/faqs/eight.svg" alt="eight">
+                                <p>Is Brugusikshan applicable to me?</p>
+                            </div>
+                            <img src="../../assests/faqs/downarrow.svg" alt="arrow">
+                        </div>
+                        <div class="faqA">
+                            <p>We are providing the worksheets from Nursery to Grade 5. These worksheets are even
+                                applicable to all category children.</p>
+                        </div>
+                    </div>
+                    <div class="faqQA">
+                        <div class="faqQ">
+                            <div class="quetsion">
+                                <img src="../../assests/faqs/nine.svg" alt="nine">
+                                <p>Is Brugusikshan applicable to me?</p>
+                            </div>
+                            <img src="../../assests/faqs/downarrow.svg" alt="arrow">
+                        </div>
+                        <div class="faqA">
+                            <p>We are providing the worksheets from Nursery to Grade 5. These worksheets are even
+                                applicable to all category children.</p>
+                        </div>
+                    </div>
+                    <div class="faqQA">
+                        <div class="faqQ">
+                            <div class="quetsion">
+                                <img src="../../assests/faqs/ten.svg" alt="ten">
+                                <p>Is Brugusikshan applicable to me?</p>
+                            </div>
+                            <img src="../../assests/faqs/downarrow.svg" alt="arrow">
+                        </div>
+                        <div class="faqA">
+                            <p>We are providing the worksheets from Nursery to Grade 5. These worksheets are even
+                                applicable to all category children.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="faqImg">
+                <img src="../../assests/faqs/faqboy.svg" alt="boy">
+            </div>
+
+        </div>
+    </div>
+    <%- include('../components/footer') %>
+
+</body>
+<script>
+    let allfaqQA = document.querySelectorAll(".faqQA");
+    allfaqQA.forEach((el)=>{
+        el.addEventListener('click',()=>{
+            el.classList.toggle('active')
+        })
+    })
+</script>
+
+
+</html>
