@@ -30,6 +30,10 @@ app.get('/nursery', function(req, res) {
 });
 app.get('/faqs', function(req, res) {
   res.render('components/faqs');
+})
+
+app.get('/about', function(req, res) {
+  res.render('pages/about');
 });
 
 // about page

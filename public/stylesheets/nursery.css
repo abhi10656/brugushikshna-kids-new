@@ -55,6 +55,7 @@
     border-radius: 10px;
     border: none;
     width: 12%;
+    cursor: pointer;
 
 }
 /* section2 */
@@ -83,7 +84,6 @@
     border-radius: 10px;
     cursor: pointer;
 }
-
 
 
 
@@ -194,16 +194,17 @@
     gap: 2%;
     padding: 0 0 0 7%;
     margin: 0 0 2% 0;
+    position: relative;
 }
 .nursery-sec4price
 {
     color:#4DD42B;
 }
-.nursery-sec4notprice
-{
-    text-decoration:line-through #FF0000  5px;
-
+.nursery-sec4notprice {
+    background-image: repeating-linear-gradient(163deg, transparent 0%, transparent 46%,red 50%, transparent 52%, transparent 100%);
 }
+  
+    
 .nursery-sec4price,.nursery-sec4notprice
 {
     font-size: 25px;
@@ -220,4 +221,5 @@
     padding: 1% 0%;
     border-radius: 10px;
     font-size: 22px;
+    cursor: pointer;
 }
