@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <%- include('../components/nav') %>
     <div class="nursery-maincontainer">
         <div class="nursery-container">
             <div class="nursery-sec1mainheadings">
@@ -24,10 +25,10 @@
         </div>
         <div class="nursery-parentcards">
         <div class="nursery-sec2parentbuttons">
-            <button class="nursery-sec2button1">Numeracy</button>
-            <button class="nursery-sec2button2">Literacy</button>
-            <button class="nursery-sec2button3">Art</button>
-            <button class="nursery-sec2button4">Stroke</button>
+            <button class="nursery-sec2button"  data-index="1" onclick="handletabs(this)" style="background-color: #FC7E82; outline: 10px solid #FECBCD;">Numeracy</button>
+            <button class="nursery-sec2button"  data-index="2" onclick="handletabs(this)" style="background-color: #FAC800;">Literacy</button>
+            <button class="nursery-sec2button"  data-index="3" onclick="handletabs(this)" style="background-color: #7B61F8;">Art</button>
+            <button class="nursery-sec2button"  data-index="4" onclick="handletabs(this)" style="background-color: #26BC0F;">Stroke</button>
         </div>
         <div class="nursery-sec2maincards">
             <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
@@ -35,19 +36,19 @@
             <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
             <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
         </div>
-        <div class="nursery-sec2maincards">
+        <div class="nursery-sec2maincards" style="display: none;">
             <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
             <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
             <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
             <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
         </div>
-        <div class="nursery-sec2maincards">
+        <div class="nursery-sec2maincards" style="display: none;">
             <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
             <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
             <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
             <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
         </div>
-        <div class="nursery-sec2maincards">
+        <div class="nursery-sec2maincards" style="display: none;">
             <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
             <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
             <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
@@ -100,7 +101,22 @@
             </div>
         </div>
     </div>
-
+    <%- include('../components/footer') %>
 </body>
+<script>
+      function handletabs(el) {
+        let colors = ["#FECBCD","#FFEC9F","#C5B9FF","#ACFE9F"]
+        let allButtons = document.querySelectorAll(".nursery-sec2button");
+                allButtons.forEach((e)=>{
+                    e.style.outline = 'none';
+                })
+                el.style.outline = `10px solid ${colors[el.dataset.index - 1]}`;
+        let carousels = [...document.querySelectorAll(".nursery-sec2maincards")];
+        carousels.forEach((carousel) => {
+            carousel.style.display = "none";
+        });
+        carousels[el.dataset.index - 1].style.display = "flex";
+    }
+</script>
 
 </html>

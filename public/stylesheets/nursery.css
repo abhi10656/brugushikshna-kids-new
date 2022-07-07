@@ -62,41 +62,24 @@
 .nursery-sec2parentbuttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 4%;
     margin: -5% 0% 5% 0%;
 
 }
-
-.nursery-sec2button1 {
-    background-color: #FC7E82;
+.Literacy, .arts, .Stroke{
+    display:none
 }
 
-.nursery-sec2button1,
-.nursery-sec2button2,
-.nursery-sec2button3,
-.nursery-sec2button4 {
-    padding: 10px 0px;
+
+.nursery-sec2button {
+    padding: 7px 0px;
     width: 10%;
     color: #fff;
     font-size: 25px;
     font-family: 'Comic Sans MS';
     border: none;
-    border-radius: 10px;
+    border-radius: 7px;
     cursor: pointer;
-}
-
-
-
-.nursery-sec2button2 {
-    background-color: #FAC800;
-}
-
-.nursery-sec2button3 {
-    background-color: #7B61F8;
-}
-
-.nursery-sec2button4 {
-    background-color: #26BC0F;
 }
 
 .nursery-sec2maincards {
