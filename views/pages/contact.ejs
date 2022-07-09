@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="../../stylesheets/contact.css">
 </head>
 
 <body>
-    <%- include('../components/nav') %>
-        <div class="contact-maincontainer">
-            <div class="contact-background">
+    <!-- <%- include('../components/nav') %> -->
+    <div class="contact-maincontainer">
+        <div class="contact-background">
             <p class="contact-contact">Contact us</p>
-        
+
             <div class="contact-sec1parent">
                 <div class="contact-sec1child">
                     <p class="contact-sec1heading">HOW CAN WE HELP YOU?</p>
@@ -23,14 +23,14 @@
                         questions answered.</p>
                     <div class="contact-formimg">
                         <img src="./assests/contactus/conatctimg.svg" alt="formpageimage" class="contact-sec1img">
-                        <form action="" class="contact-formparent">
+                        <form action="/contact" class="contact-formparent">
                             <div class="contact-formmain">
                                 <div class="contact-form">
                                     <label for="First Name" class="labelname">First Name</label><br>
                                     <input type="text" id="name" class="name">
                                 </div>
                                 <div class="contact-form">
-                                    <label for="Last Name" class="labelname" >Last Name</label><br>
+                                    <label for="Last Name" class="labelname">Last Name</label><br>
                                     <input type="text" id="name" class="name">
                                 </div>
                             </div>
@@ -45,23 +45,36 @@
                                 </div>
                             </div>
                             <div class="contact-textmain">
-                
-                            <label for="Message" class="labelname">Message</label><br>
-                            <textarea name="text" id="message" cols="60" rows="3"
-                                class="textareamessage"></textarea></div>
-                                <div class="contact-parentbutton">
-                                    <button class="contact-sumbitbutton">Submit</button>
-                                </div>
+
+                                <label for="Message" class="labelname">Message</label><br>
+                                <textarea name="text" id="message" cols="60" rows="3"
+                                    class="textareamessage"></textarea>
+                            </div>
+                            <div class="contact-parentbutton">
+                                <button class="contact-sumbitbutton">Submit</button>
+                            </div>
                         </form>
                     </div>
-                       
-                    </div>
-                  
+
                 </div>
+
             </div>
-         
         </div>
-        <%- include('../components/footer') %>
+
+    </div>
+    <!-- <%- include('../components/footer') %> -->
+
+
+    <script>
+        function validation(vl)
+        {
+let val=document.querySelectorAll(".contact-sumbitbutton");
+val.forEach((v)=>{
+
+    
+});
+        }
+    </script>
 </body>
 
 </html>

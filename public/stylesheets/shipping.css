@@ -13,7 +13,7 @@
 .shipping-mainimage {
     width: 100%;
     text-align: center;
-    margin: 5% 0 0 0;
+    margin: 9% 0 0 0;
 
 
 }
@@ -50,7 +50,7 @@
     border-left: 10px solid #808080;
     border-bottom: 3px solid #808080;
     padding: 0% 5%;
-    margin-top: 32.8%;
+    margin-top: 37.4%;
 
 
 }
@@ -79,7 +79,8 @@
     padding-left: 3.5%;
     padding-bottom: 4%;
     line-height: 1.6;
-   letter-spacing: 0.9px;
+    letter-spacing: 0.9px;
+    opacity: 93%;
 }
 
 /* terms */
@@ -89,27 +90,309 @@
 
 
 }
-.terms-numberheading{
-    color:#015B97;
+
+.terms-numberheading {
+    color: #015B97;
     font-size: 22px;
-    padding: 0 0 0 3.5% ;
+    padding: 0 0 0 3.5%;
 }
-.term-content
-{
+
+.term-content {
     background: transparent radial-gradient(farthest-corner at 48% 38%, #FFFFFF 17%, #F9FBFB 45%, #E9EFEF 80%, #DDE7E7 100%);
     border-top: 7px solid #808080;
     border-right: 3px solid #808080;
     border-left: 10px solid #808080;
     border-bottom: 3px solid #808080;
     padding: 0% 5%;
-    margin-top: 27.81%;
+    margin-top: 32.4%;
 }
+
 .terms-mainsection {
     padding: 0% 6%;
     position: absolute;
     top: 0;
-    right:0;
-    left:0;
+    right: 0;
+    left: 0;
+}
+
+/* privacy */
+.privacy-content {
+    background: transparent radial-gradient(farthest-corner at 48% 38%, #FFFFFF 17%, #F9FBFB 45%, #E9EFEF 80%, #DDE7E7 100%);
+    border-top: 7px solid #808080;
+    border-right: 3px solid #808080;
+    border-left: 10px solid #808080;
+    border-bottom: 3px solid #808080;
+    padding: 0% 5%;
+    margin-top: 32.4%;
+}
 
 
+/* mobile version of shipping page */
+
+@media (max-width:1300px){
+    .shipping-mainheading {
+        font-size: 27px;
+    }
+}
+@media (max-width:1200px){
+    .shipping-mainheading {
+        font-size: 26px;
+    }
+    .shipping-contents {
+        font-size: 21px;
+    }
+    .shipping-headingpara {
+        font-size: 12px;
+    }
+    .shipping-img {
+        width: 78%;
+    }
+    .shipping-content 
+    {
+        margin-top: 39.6%;
+    }
+    .shipping-mainimage {
+        margin: 12% 0 0 0;
+    }
+}
+@media (max-width:1100px){
+.shipping-mainpolicy {
+    padding: 0% 11% 5% 11%;
+}
+.shipping-mainimage {
+    margin: 13% 0 0 0;
+}
+.shipping-mainheading {
+    font-size: 25px;
+}
+.shipping-contents {
+    font-size: 20px;
+}
+}
+
+@media (max-width:1000px){
+    .shipping-mainimage {
+        margin: 14% 0 0 0;
+    }
+    .shipping-content {
+        margin-top: 40.8%;
+    }
+    .shipping-mainheading {
+        font-size: 24px;
+    }
+}
+@media (max-width:900px){
+.shipping-mainpolicy {
+    padding: 0% 9% 5% 9%;
+}
+.shipping-mainimage {
+    margin: 15.9% 0 0 0;
+}
+.shipping-mainheading {
+    font-size: 23px;
+}
+.shipping-contents {
+    font-size: 19px;
+}
+.shipping-headingpara {
+    font-size: 11px;
+    line-height: 1.5;
+}
+}
+@media (max-width:700px){
+    .shipping-mainheading {
+        font-size: 22px;
+    }
+.shipping-headingpara {
+    font-size: 11px;
+    line-height: 1.5;
+}
+.shipping-img {
+    width: 82%;
+}
+.shipping-content {
+    margin-top: 42.2%;
+}
+.shipping-headingpara {
+    padding-left: 7.5%;
+}
+}
+@media (max-width:600px){
+.shipping-mainimage {
+    margin: 18.9% 0 0 0;
+}
+.shipping-content {
+    margin-top: 45.4%;
+}
+.shipping-mainheading {
+    font-size: 20px;
+}
+.shipping-contents {
+    font-size: 18px;
+}
+.shipping-headingpara {
+    padding-left: 4.5%;
+    font-size: 12px;
+}
+.shipping-contents {
+    font-size: 17px;
+}
+.shipping-mainheading {
+    padding: 14% 0%;
+}
+.shipping-content {
+    margin-top: 55.2%;
+    border-top: 2px solid #808080;
+    border-left: 5px solid #808080;
+    border-bottom: 1px solid #808080;
+    border-right: 1px solid #808080;
+}
+}
+@media (max-width:500px){
+.shipping-mainimage {
+    margin: 23.9% 0 0 0;
+}
+.shipping-content {
+    margin-top: 50.7%;
+}
+.shipping-mainheading {
+    font-size: 19px;
+}
+.shipping-contents {
+    font-size: 16px;
+}
+}
+@media (max-width:400px){
+.shipping-mainimage {
+    margin: 27.9% 0 0 0;
+}
+.shipping-content {
+    margin-top: 55.2%;
+}
+.shipping-mainheading {
+    padding: 14% 0%;
+    font-size: 21px;
+}
+.shipping-contents {
+    font-size: 17px;
+    padding-bottom: 5%;
+}
+.shipping-headingpara {
+    padding-left: 1.5%;
+    font-size: 14px;
+}
+.shipping-contents {
+-webkit-text-stroke-width: thin;
+font-weight: 500;
+}
+}
+/* mobile version termand condition page */
+@media (max-width:1200px){
+
+.term-content
+{
+    margin-top: 35.9%;
+}
+}
+@media (max-width:1000px){
+.term-content {
+    margin-top: 37.2%;
+}
+}
+
+@media (max-width:900px){
+.terms-numberheading {
+    font-size: 21px;
+}
+}
+@media (max-width:800px){
+    .terms-numberheading {
+        font-size: 20px;
+    }
+    }
+    @media (max-width:800px){
+        .terms-numberheading {
+            font-size: 19px;
+        }
+        }
+        @media (max-width:600px){
+        .term-content {
+            margin-top:44.6%;
+        }
+        .terms-numberheading {
+            font-size: 18px;
+        }
+        .terms-img {
+            width: 78%;
+        }
+        .term-content {
+            border-top: 2px solid #808080;
+            border-right: 1px solid #808080;
+            border-left: 5px solid #808080;
+            border-bottom: 1px solid #808080;
+    }
+}
+
+@media (max-width:500px){
+.term-content {
+    margin-top: 49.9%;
+}
+.terms-numberheading {
+    font-size: 17px;
+}
+}
+
+@media (max-width: 400px){
+.term-content {
+    margin-top: 53.9%;
+}
+.terms-numberheading {
+    font-size: 17px;
+    -webkit-text-stroke-width: thin;
+font-weight: 500;
+padding: 5% 0 1% 0%;
+}
+
+
+}
+
+/* privacy policy mobile version */
+@media (max-width: 1200px){
+    .privacy-content {
+
+margin-top: 35.8%;
+    }
+}
+@media (max-width: 1000px){
+.privacy-content {
+    margin-top: 37.1%;
+}
+}
+
+@media (max-width: 900px){
+.privacy-content {
+    margin-top: 37.5%;
+}
+}
+@media (max-width: 600px){
+    .privacy-content {
+        border-top: 2px solid #808080;
+        border-right: 1px solid #808080;
+        border-left: 5px solid #808080;
+        border-bottom: 1px solid #808080;
+}
+.privacy-content {
+    margin-top: 44.7%;
+}
+@media (max-width: 500px){
+}
+.privacy-content {
+    margin-top: 49.7%;
+}
+}
+
+@media (max-width: 400px){
+.privacy-content {
+    margin-top: 54.7%;
+}
 }
