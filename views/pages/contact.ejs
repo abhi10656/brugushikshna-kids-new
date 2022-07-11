@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <!-- <%- include('../components/nav') %> -->
+    <%- include('../components/nav') %>
     <div class="contact-maincontainer">
         <div class="contact-background">
             <p class="contact-contact">Contact us</p>
@@ -23,25 +23,25 @@
                         questions answered.</p>
                     <div class="contact-formimg">
                         <img src="./assests/contactus/conatctimg.svg" alt="formpageimage" class="contact-sec1img">
-                        <form action="/contact" class="contact-formparent">
+                        <form action="/contact-form" method="POST" class="contact-formparent" onsubmit="validation()" name ="contactform">
                             <div class="contact-formmain">
                                 <div class="contact-form">
                                     <label for="First Name" class="labelname">First Name</label><br>
-                                    <input type="text" id="name" class="name">
+                                    <input type="text" id="name" class="name" name="Name">
                                 </div>
                                 <div class="contact-form">
                                     <label for="Last Name" class="labelname">Last Name</label><br>
-                                    <input type="text" id="name" class="name">
+                                    <input type="text" id="name" class="name" name="LastName">
                                 </div>
                             </div>
                             <div class="contact-formmain">
                                 <div class="contact-form">
                                     <label for="Phone Number" class="labelname">Phone Number</label><br>
-                                    <input type="number" id="name" class="name">
+                                    <input type="telephone" id="name" pattern="/^\d{10}$/" class="name" name="Telephone">
                                 </div>
                                 <div class="contact-form">
                                     <label for="Email" class="labelname">Email</label><br>
-                                    <input type="email" id="name" class="name">
+                                    <input type="email" pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g" id="name" class="name" name ="Email"  >
                                 </div>
                             </div>
                             <div class="contact-textmain">
@@ -62,19 +62,50 @@
         </div>
 
     </div>
-    <!-- <%- include('../components/footer') %> -->
-
-
+    <%- include('../components/footer') %>
     <script>
-        function validation(vl)
+        function validation()
         {
-let val=document.querySelectorAll(".contact-sumbitbutton");
-val.forEach((v)=>{
 
-    
-});
+let result=document.contactform.values;
+if(result=="")
+{
+  window.alert("please fill all  details ");
+    return false;
+}
+return true;
         }
-    </script>
+
+        </script>
+<!-- 
+    <script>
+        function validation()
+        {
+                var name = document.contactform.Name.value;
+                var email =document.contactform.Email.value;
+                var phone =document.contactform.Telephone.value;
+                var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;  
+                var regPhone=/^\d{10}$/;                                                                       
+ 
+                if (name == "" ) {
+                    window.alert("Please enter your name properly.");
+                    return false;
+                    console.log("hello")
+                }
+                if (email == "" || !regEmail.test(email)) {
+                    window.alert("Please enter a valid e-mail address.");
+                    return false;
+                }
+ 
+            
+                if (phone == "" && !regPhone.test(phone)) {
+                    window.alert("Please enter valid phone number.");
+                    return false;
+                }
+ 
+                return true;
+            }
+    </script> -->
 </body>
 
 </html>

@@ -1,13 +1,21 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser')
 
+
+
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// parse application/json
+app.use(bodyParser.json())
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
 // use res.render to load up an ejs view file
 app.use(express.static(__dirname + '/public'));
-
 app.use(express.static(__dirname + '/public'));
 
 
@@ -43,6 +51,18 @@ app.get('/about', function(req, res) {
 app.get('/contact', function(req, res) {
   res.render('pages/contact');
 });
+
+
+// Form submittion
+
+app.post('/contact-form' , function(req , res) {
+
+  // console.log(req.body , 'wow');
+
+  res.send(req.body);
+
+})
+
 
 // about page
 app.get('/about', function(req, res) {
