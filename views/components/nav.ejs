@@ -33,7 +33,7 @@
                 width: 34%;
                    }
 
-                   .navhover.active{
+                   .navContent a:is(:link, :active, :visited).active{
                     color: #F8B361;
                    }
 
@@ -56,22 +56,24 @@
             <img src="../../assests/navbar/brugusikshan logo.png" alt="brugusikshanlogo">
         </div>
         <div class="navContent">
-            <a  class="navhover active" href="#">Home</a>
-            <a class="navhover"href="#">About Us</a>
-            <a  class="navhover"href="#">Contact Us</a>
+            <a  class="navhover" href="/">Home</a>
+            <a class="navhover"href="/about">About Us</a>
+            <a  class="navhover"href="/contact">Contact Us</a>
         </div>
     </div>
 </body>
-<script>
-    let allAtags = document.querySelectorAll(".navhover")
-    allAtags.forEach((el)=>{
-        el.addEventListener("click",()=>{
-            allAtags.forEach((e)=>{
-                e.classList.remove("active")
-            })
-            el.classList.add("active")
-        })
-    })
-    
+<script>   
+    let activepage = window.location.pathname;
+    let allLinks = document.querySelectorAll('.navContent a')
+    allLinks.forEach(el => { 
+      let pageLink=el.href.split("/").pop()     
+        if(pageLink.length==0 && activepage=="/"){
+            el.classList.add('active');
+        }
+        else{
+            if(activepage!=='/'){
+                if(el.href.includes(`${activepage}`)){
+                    el.classList.add('active');
+                }}}})
 </script>
 </html>
