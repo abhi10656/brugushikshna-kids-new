@@ -2,6 +2,10 @@
     font-family: Proxima Nova;
     src: url("../fonts/Proxima-Nova-Font/Proxima\ Nova\ Font.otf");
 }
+@font-face {
+    font-family: Comic Sans MS;
+    src:url("../fonts/comic-sans-ms/COMIC.TTF");
+}
 
 * {
     box-sizing: border-box;
@@ -11,7 +15,7 @@
 }
 
 .about-parent {
-    padding: 7% 6% 0 6%;
+    padding: 7% 3% 0 3%;
 }
 
 .about-maincontainer {
@@ -104,7 +108,7 @@
     font-weight: 900;
     -webkit-text-stroke-width: thin;
     text-align: center;
-    
+
 }
 
 .about-sec3heading2,
@@ -156,7 +160,7 @@
     font-weight: 900;
     -webkit-text-stroke-width: thin;
     text-align: center;
-    padding:5% 0% 7% 0%;
+    padding: 5% 0% 7% 0%;
 
 
 }
@@ -172,7 +176,7 @@
 
 .about-sec4parentprofile {
     display: flex;
-justify-content: center;
+    justify-content: center;
 }
 
 .about-sec4profilename {
@@ -208,32 +212,31 @@ justify-content: center;
 }
 
 /* section5 */
-.about-sec5background
-{
+.about-sec5background {
     background-image: url("../../assests/aboutus/section5.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
     padding: 8% 10%;
 }
-.about-sec5parent
-{
+
+.about-sec5parent {
     margin: 5%;
 }
-.about-sec5heading
-{
+
+.about-sec5heading {
     font-weight: 900;
     -webkit-text-stroke-width: thin;
     font-size: 20px;
 }
-.about-sec5para
-{
+
+.about-sec5para {
     opacity: 93%;
     font-size: 13px;
     padding: 2% 69% 2% 0;
 }
-.about-sec5button
-{
+
+.about-sec5button {
     background-color: white;
     box-shadow: 0px 3px 15px #00000029;
     border: none;
@@ -242,4 +245,395 @@ justify-content: center;
     border-radius: 10px;
     font-weight: 900;
     -webkit-text-stroke-width: thin;
+}
+
+.about-sec4parentprofile-mobile {
+    display: none;
+}
+.about-sec3cards-mobile
+{
+    display: none;
+}
+/* mobile version */
+
+@media(max-width:1400px) {
+    .about-sec1heading {
+        width: 82%;
+    }
+
+    .about-sec1para {
+        padding: 2% 17% 0 0;
+    }
+}
+
+@media(max-width:1300px) {
+    .about-sec1heading {
+        width: 84%;
+        font-size: 26px;
+    }
+
+    .about-sec1para {
+        padding: 2% 16% 0 0;
+    }
+
+    .about-sec2parent {
+        padding: 3% 6%;
+    }
+
+    .about-sec3heading2,
+    .about-sec4heading2 {
+        padding: 2% 23% 4% 23%;
+    }
+
+    .about-sec3cardbackimg1,
+    .about-sec3cardbackimg2,
+    .about-sec3cardbackimg3 {
+        padding: 32px;
+        width: 29%;
+    }
+
+    .about-sec5button {
+        background-color: white;
+        box-shadow: 0px 3px 15px #00000029;
+        border: none;
+        width: 17%;
+    }
+
+    .about-sec5button {
+        width: 17%;
+    }
+
+
+}
+
+@media(max-width:1100px) {
+    .about-sec1para {
+        padding: 2% 9% 0 0;
+        font-size: 11px;
+    }
+
+    .about-sec2img {
+        width: 25%;
+    }
+
+    .about-sec2para {
+        font-size: 12px;
+    }
+
+    .about-sec2heading2 {
+        font-size: 22px;
+    }
+
+    .about-sec2maincontainer {
+        display: flex;
+    }
+
+    .about-sec2parent {
+        padding: 4% 6%;
+    }
+
+    .about-sec3heading1,
+    .about-sec4heading1 {
+        font-size: 23px;
+    }
+
+    .about-sec3heading2,
+    .about-sec4heading2 {
+        font-size: 13px;
+    }
+
+    .about-sec3cardbackimg1,
+    .about-sec3cardbackimg2,
+    .about-sec3cardbackimg3 {
+        padding: 25px;
+        width: 30%;
+    }
+
+    .about-sec5button {
+        width: 18%;
+    }
+}
+
+@media(max-width:1000px) {
+    .about-sec1img {
+        width: 60%;
+    }
+
+    .about-sec1heading {
+        font-size: 23px;
+        width: 92%;
+    }
+
+    .about-sec2img {
+        width: 30%;
+    }
+
+    .about-sec3heading2,
+    .about-sec4heading2 {
+        padding: 2% 21% 4% 21%;
+    }
+}
+
+@media(max-width:900px) {
+    .about-sec1img {
+        width: 55%;
+    }
+
+    .about-sec2para {
+        font-size: 11px;
+    }
+
+    .about-sec2heading2 {
+        font-size: 21px;
+    }
+
+    .about-sec3heading1,
+    .about-sec4heading1 {
+        font-size: 22px;
+    }
+
+    .about-sec3heading2,
+    .about-sec4heading2 {
+        padding: 2% 18% 4% 18%;
+    }
+
+    .about-sec3cardpara {
+        font-size: 11px;
+    }
+
+    .about-sec4profilename {
+        font-size: 17px;
+    }
+
+    .about-sec4profilediscription {
+        font-size: 11px;
+    }
+
+    .about-sec5para {
+        font-size: 12px;
+        padding: 2% 50% 2% 0;
+    }
+
+    .about-sec5button {
+        width: 21%;
+    }
+
+    .about-sec5parent {
+        margin: 4%;
+    }
+}
+
+@media(max-width:800px) {
+    .about-sec1main {
+        flex-direction: column-reverse;
+    }
+
+    .about-sec1heading {
+        width: 100%;
+    }
+
+    .about-sec1para {
+        padding: 0;
+    }
+
+    .about-sec1parentcontents {
+        text-align: center;
+        padding: 0 11%;
+    }
+
+    .about-sec1para {
+        padding: 4%;
+    }
+
+    .about-sec1img {
+        width: 72%;
+    }
+
+    .about-sec2maincontainer {
+        flex-direction: column;
+    }
+
+    .about-sec2container {
+        width: 100%;
+
+        text-align: center;
+        padding: 3% 0 0 0;
+
+    }
+
+    .about-sec2para {
+        font-size: 12px;
+        padding: 0 4%;
+    }
+
+    .about-sec2heading {
+        font-size: 18px;
+    }
+
+    .about-sec2img {
+        width: 40%;
+        margin: 8% auto;
+    }
+
+    .about-sec5heading {
+        padding: 0 54% 0 0;
+        font-size: 19px;
+
+    }
+
+    .about-sec5background {
+        padding: 9% 7%;
+    }
+
+    .about-sec5button {
+        width: 23%;
+    }
+
+    .about-sec4profilediscription {
+        padding: 0 21%;
+    }
+}
+@media(max-width:700px) {
+.about-sec4parentprofile-mobile
+{
+    display: contents;
+}
+.about-sec4parentprofile
+{
+    display: none;
+}
+.about-sec4parentprofile-mobile .owl-carousel .owl-item img {
+    width: 65%;
+    margin: 0 auto;
+  
+}
+.about-sec5parent {
+    margin: 0%;
+}
+.about-sec5background {
+    padding: 6% 8%;
+}
+.about-sec3cards-mobile
+{
+    display: contents;
+}
+.about-sec3cards
+{
+    display: none;
+}
+.about-sec3cardbackimg1, .about-sec3cardbackimg2, .about-sec3cardbackimg3 {
+    padding: 25px;
+    width: 100%;
+}
+.about-sec3heading2, .about-sec4heading2 {
+    padding: 2% 9% 4% 9%;
+}
+}
+@media(max-width:600px) {
+.about-sec3cardbackimg1, .about-sec3cardbackimg2, .about-sec3cardbackimg3 {
+    width: 65%;
+    margin: 0 auto;
+}
+.about-sec4parentprofile-mobile .owl-carousel .owl-item img {
+    width: 45%;
+}
+.about-sec5heading {
+    padding: 0 45% 0 0;
+    font-size: 17px;
+}
+.about-sec5para {
+    font-size: 11px;
+    padding: 4% 50% 4% 0;
+}
+.about-sec5button {
+    width: 28%;
+}
+.about-sec5background {
+    background-image: url("../../assests/aboutus/section5mobile.png");
+    height: 90vh;
+    padding: 12% 6% 0 6%;
+    margin: 0% 6% 0 2%;
+}
+.about-sec5heading ,.about-sec5para  {
+    padding: 3% 12%;
+    
+}
+.about-sec5button {
+    width: 31%;
+    margin: 0 36%;
+}
+.about-sec5heading {
+    font-size: 19px;
+}
+.about-sec5button {
+    width: 36%;
+    margin: 8% 0 0 12%;
+
+}
+}
+@media(max-width:500px) {
+.about-sec1parentcontents {
+    text-align: left;
+    padding: 0 0 0 7%;
+}
+.about-sec1para {
+    padding: 7% 24% 20% 0%;
+}
+.about-sec1heading {
+    font-family: 'Comic Sans MS';
+    padding: 6% 22% 0 0;
+}
+.about-sec2para {
+    font-size: 12px;
+    padding: 0 5%;
+}
+.about-sec2heading2 {
+    font-size: 20px;
+}
+.about-sec2heading {
+    font-size: 17px;
+}
+.about-sec3heading2, .about-sec4heading2 {
+    padding: 4% 9% 6% 9%;
+    font-size: 12px;
+}
+.about-sec5background {
+    height: 70vh;
+}
+.about-parent {
+    padding: 7% 0% 0 0%;
+}
+.about-sec1img {
+    width: 92%;
+}
+.about-sec2img {
+    width: 70%;
+    margin: 8% auto;
+}
+}
+@media(max-width:400px) {
+
+.about-sec3heading2, .about-sec4heading2 {
+    padding: 4% 9% 6% 9%;
+    font-size: 10px;
+}
+.about-sec3heading1, .about-sec4heading1 {
+    font-size: 20px;
+    padding: 0 19%;
+}
+.about-sec3cardbackimg1, .about-sec3cardbackimg2, .about-sec3cardbackimg3 {
+    width: 82%;
+    margin: 0 auto;
+}
+.about-sec5button {
+    width: 46%;
+    margin: 8% 0 0 12%;
+}
+.about-sec5background {
+    height: 65vh;
+}
+.about-sec1heading {
+    font-family: 'Comic Sans MS';
+    padding: 6% 28% 0 0;
+}
 }
