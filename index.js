@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-
+app.use(express.json({}))
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
@@ -31,10 +31,7 @@ app.get('/nursery', function(req, res) {
 app.get('/faqs', function(req, res) {
   res.render('components/faqs');
 })
-//demokit
-// app.get('/demokit', function(req, res) {
-//   res.render('components/demoKit');
-// })
+
 
 app.get('/about', function(req, res) {
   res.render('pages/about');

@@ -2,110 +2,170 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
         @font-face {
-    font-family: Proxima Nova;
-    src:url("../fonts/Proxima-Nova-Font/Proxima\ Nova\ Font.otf");
-}
+            font-family: Proxima Nova;
+            src: url("../fonts/Proxima-Nova-Font/Proxima\ Nova\ Font.otf");
+        }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Proxima Nova', sans-serif;
-}
-.demoMainBlack {
-    background-color: #11111196;
-    position: fixed;
-    z-index: 99999;
-    width: 100vw;
-    height: 100vh;
-    /* padding: 3% 0; */
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Proxima Nova', sans-serif;
+        }
+
+        .demoMainBlack {
+            background-color: #11111196;
+            position: fixed;
+            z-index: 99999;
+            width: 100vw;
+            height: 100vh;
+            /* padding: 3% 0; */
+        }
+
         .eachDetails {
             display: flex;
-    flex-direction: column;
-    width: 41%;
-    margin: 3% 4% 0 0;
+            flex-direction: column;
+            width: 41%;
+            margin: 3% 4% 0 0;
         }
+
         .Details {
-    display: flex;
-    justify-content: center;
-}
+            display: flex;
+            justify-content: center;
+        }
+
         .demoUserDetails {
             display: flex;
-                }
-        .demoFormpart{
-            border: 3px solid #F8B361;
-    border-radius: 20px;
-    width: 80%;
-    margin: 4% auto;
-    padding: 4% 0 2% 0;
-    position: relative;
-    background-color: white;
         }
-        .demoUserDetails>form{
+
+        .demoFormpart {
+            border: 3px solid #F8B361;
+            border-radius: 20px;
+            width: 80%;
+            margin: 4% auto;
+            padding: 4% 0 2% 0;
+            position: relative;
+            background-color: white;
+        }
+
+        .demoUserDetails>form {
             width: 75%;
         }
-        .demoImg{
+
+        .demoImg {
             width: 25%;
             text-align: left;
         }
-        .demoImg>img{
+
+        .demoImg>img {
             width: 93%;
             margin: 17% 0 0;
         }
-        .demoFormpart>h2{
+
+        .demoFormpart>h2 {
             text-align: center;
             font-size: 27px;
             font-weight: 700;
             margin: 0 0 2%;
         }
-        .eachDetails>label{
+
+        .eachDetails>label {
             font-size: 19px;
             color: #000000;
             font-weight: 600;
             margin: 0 0 3% 0;
         }
-        .eachDetails>input,select,textarea {
+
+        .eachDetails>input,
+        select,
+        textarea {
             padding: 2.5% 3%;
             font-size: 19px;
             border: 1px solid #707070;
             border-radius: 8px;
-}
-textarea{
-    max-width: 100%;
-    min-width: 100%;
-    max-height: 100px;
-}
-#demoKitClose{
-    top: 1%;
-    position: absolute;
-    right: 1%;
-    width: 47px;
-}
-form>button{
-    border: none;
-    background-color: #F8B361;
-    color: white;
-    box-shadow: 0px 3px 10px #00000029;
-    font-size: 20px;
-    padding: 1.7% 7.5%;
-    border-radius: 11px;
-    font-weight: 600;
-    float: right;
-    margin: 3% 20% 0 0;
-}
+        }
+
+        textarea {
+            max-width: 100%;
+            min-width: 100%;
+            max-height: 100px;
+        }
+
+        #demoKitClose {
+            top: 1%;
+            position: absolute;
+            right: 1%;
+            width: 47px;
+        }
+
+        form>button {
+            border: none;
+            background-color: #F8B361;
+            color: white;
+            box-shadow: 0px 3px 10px #00000029;
+            font-size: 20px;
+            padding: 1.7% 7.5%;
+            border-radius: 11px;
+            font-weight: 600;
+            float: right;
+            margin: 3% 20% 0 0;
+        }
     </style>
-    <title>git </title>
+    <title>demokit</title>
 </head>
 
 <body>
+    <script>
+        //form validation
+        $(document).ready(function () {
+            let demokit = document.getElementById('demoFormDetails');
+            demokit.addEventListener('submit', validate);
+            let kidDetails = {}
+            function validate(e) {
+                e.preventDefault();
+                let validation = true;
+                var x = document.getElementById('demoFormDetails');
+                var inputtags = x.querySelectorAll('input,select,textarea');
+                inputtags.forEach((el) => {
+                    let element = el.value;
+
+                    if (el.value === "") {
+                        validation = false;
+                    } else {
+                        kidDetails[el.name] = element;
+                    }
+                    console.log(kidDetails)
+                });
+
+                if (validation) {
+                    $.ajax({
+                        url: "",
+                        method: 'POST',
+                        data: kidDetails,
+                        error: function (result) {
+                            console.log('result', result)
+                        },
+                        statusCode: {
+                            200: function (result) {
+                                alert("Form is Submitted")
+                                //form resetting
+                                inputtags.forEach((el)=>{
+                                    el.value = "";
+                                })
+                            }
+                        },
+                    })
+                } else {
+                    alert("Fill all the details")
+                }
+            }
+        })  
     </script>
-    <div class="demoMainBlack" id="demokitForm"  style="display: none;">
+
+    <div class="demoMainBlack" id="demokitForm" style="display: none;">
         <div class="demoFormpart">
             <h2>Get your demo kit form</h2>
             <img id="demoKitClose" class="democross" src="../../assests/demokit/demoCross.svg" alt="closeImage">
@@ -116,27 +176,29 @@ form>button{
                         <section class="Details">
                             <div class="eachDetails">
                                 <label>Name</label>
-                                <input type="text" placeholder="First Name" required>
+                                <input name="firstname" type="text" placeholder="First Name" required>
                             </div>
                             <div class="eachDetails">
                                 <label style="visibility: hidden;">Last</label>
-                                <input type="text" placeholder="Last Name" required>
+                                <input name="lastname" type="text" placeholder="Last Name" required>
                             </div>
                         </section>
                         <section class="Details">
                             <div class="eachDetails">
                                 <label>Contact Number</label>
-                                <input type="tel" placeholder="Number" pattern="[6-9]{1}[0-9]{9}" required>
+                                <input name="conatctnumber" type="tel" placeholder="Number" pattern="[6-9]{1}[0-9]{9}"
+                                    required>
                             </div>
                             <div class="eachDetails">
                                 <label>Email Id</label>
-                                <input type="text" placeholder="Email" required>
+                                <input name="email" type="email" placeholder="Email" required>
                             </div>
                         </section>
                         <section class="Details">
                             <div class="eachDetails">
                                 <label>Grade</label>
-                                <select name="Grade" required>
+                                <select name="grade" name="Grade" required>
+                                    <option value="">Grade</option>
                                     <option value="Nursery">Nursery</option>
                                     <option value="LKG">LKG</option>
                                     <option value="UKG">UKG</option>
@@ -145,22 +207,22 @@ form>button{
                                     <option value="Grade 3">Grade 3</option>
                                     <option value="Grade 4">Grade 4</option>
                                     <option value="Grade 5">Grade 5</option>
-                                    
+
                                 </select>
                             </div>
                             <div class="eachDetails">
                                 <label>School Name</label>
-                                <input type="text" placeholder="Name" required>
+                                <input name="schoolname" type="text" placeholder="Name" required>
                             </div>
                         </section>
                         <section class="Details">
-                            <div class="eachDetails"  style="width: 86%;">
+                            <div class="eachDetails" style="width: 86%;">
                                 <label style="margin: 0 0 1.5% 0;">Address</label>
-                                <textarea placeholder="Full Address" required></textarea>
+                                <textarea name="message" placeholder="Full Address" required></textarea>
                             </div>
                         </section>
                     </div>
-                    <button>Get the kit now!</button>
+                    <button id="submitform" type="submit">Get the kit now!</button>
                 </form>
                 <div class="demoImg">
                     <img src="../../assests/demokit/demokid.svg" alt="kid image">
@@ -170,16 +232,17 @@ form>button{
     </div>
 </body>
 <script>
-      //demokit form
-      let crossbar = document.getElementById("demoKitClose");
+    //demokit form
+    let crossbar = document.getElementById("demoKitClose");
     function opendemokit() {
         document.getElementById('demokitForm').style.display = "block"
         document.body.style.overflow = "hidden"
     }
-    crossbar.addEventListener('click',()=>{
-        console.log("true",crossbar)
+    crossbar.addEventListener('click', () => {
+        console.log("true", crossbar)
         document.getElementById("demokitForm").style.display = "none";
-         document.body.style.removeProperty('overflow');
+        document.body.style.removeProperty('overflow');
     })
 </script>
+
 </html>
