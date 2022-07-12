@@ -51,10 +51,10 @@
     font-size: 20px;
     color: #fff;
     background-color: #F8B361;
-    padding: 11px 0;
+    padding: 11px 8px;
     border-radius: 10px;
     border: none;
-    width: 18%;
+    /* width: 18%; */
     cursor: pointer;
 
 }
@@ -72,8 +72,8 @@
 
 
 .nursery-sec2button {
-    padding: 7px 0px;
-    width: 10%;
+    padding: 1% 2%;
+    /* width: 10%; */
     color: #fff;
     font-size: 25px;
     font-family: 'Comic Sans MS';
@@ -150,7 +150,7 @@
     background-image: url("../../assests/nurseryinnerpage/section4img.png");
     width: 100%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: center;
 }
 .nursery-sec4maincontainer
@@ -162,7 +162,7 @@
     font-family: 'Comic Sans MS';
     font-size: 25px;
     -webkit-text-stroke-width: thin;
-    padding: 7% 53% 0% 7%;
+    padding: 1% 53% 0% 7%;
 
 }
 .nursery-sec4para
@@ -200,12 +200,73 @@
     font-family: 'Comic Sans MS';
     border: none;
     color: #fff;
-    width: 16%;
+    /* width: 16%; */
     margin:0 0 6% 7%;
-    padding: 1% 0%;
+    padding: 1% 2%;
     border-radius: 10px;
     font-size: 14px;
     cursor: pointer;
+}
+@media screen and (max-width:1080px) {
+    .nursery-sec1heading {
+        font-size: 30px;
+        padding: 0% 53% 0% 0%;
+    }
+    .nursery-sec1para {
+        padding: 3% 54% 3% 0%;
+    }
+    .nursery-sec2button {
+        font-size: 21px;
+    }
+}
+@media screen and (max-width:965px) {
+    .nursery-sec1button {
+        font-size: 15px;
+    }
+    .nursery-sec4heading {
+        font-size: 23px;
+        padding: 2% 53% 0% 7%;
+    }
+    .nursery-sec3numbers {
+        width: 13%;
+    }
+}
+@media screen and (max-width:846px) {
+    .nursery-sec1heading {
+        font-size: 27px;
+        padding: 0% 46% 0% 0%;
+    }
+    .nursery-sec1para {
+        padding: 3% 53% 3% 0%;
+    }
+    .nursery-sec2button {
+        font-size: 19px;
+    }
+    .nursery-sec3para {
+        font-size: 13px;
+        padding-right: 2%;
+    }
+    .nursery-sec4heading {
+        font-size: 20px;
+        padding: 2% 40% 0% 7%;
+    }
+    .nursery-sec4button {
+        font-size: 13px;
+    }
+    .nursery-sec2parentbuttons {
+        margin: -11% 0% 5% 0%;
+    }
+}
+@media screen and (max-width:750px) {
+    .nursery-sec3container{
+        flex-direction: column-reverse;
+    }
+    .nursery-sec3para {
+        font-size: 16px;
+    }
+    .nursery-sec3numbers {
+        width: 11%;
+    }
 }
 
 
