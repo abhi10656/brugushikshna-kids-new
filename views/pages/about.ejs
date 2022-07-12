@@ -96,8 +96,11 @@
                     </div>
 
                 </div>
-                 <div class="about-sec3cards-mobile"> 
-                    <div class="owl-carousel owl-theme">
+
+                <!-- ***********************************owl*********************************88 -->
+                <div class="about-sec3cards-mobile">
+
+                    <div class="  owl-carousel one owl-theme  ">
                         <div class="item about-sec3cardbackimg1">
                             <div class="about-sec3parentcardimg">
                                 <img src="./assests/aboutus/section3img1.svg" alt="cardimg" class="about-sec3cardimg">
@@ -130,7 +133,7 @@
                         </div>
                     </div>
 
-                </div> 
+                </div>
             </div>
         </div>
     </div>
@@ -145,33 +148,36 @@
                     nostrud exercitation ullamco</p>
             </div>
             <div class="about-sec4parentprofile">
-             
-                    <div class="item about-sec4profiles">
-                        <img src="./assests/aboutus/section4img1.png" alt="profile1" class="about-sec4img1">
-                        <p class="about-sec4profilename">Rajesh Sharma</p>
-                        <p class="about-sec4profiledesignation">Designation</p>
-                        <p class="about-sec4profilediscription">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor</p>
 
-                    </div>
-                    <div class="item about-sec4profiles">
-                        <img src="./assests/aboutus/section4img2.png" alt="profile1" class="about-sec4img1">
-                        <p class="about-sec4profilename">Rajesh Sharma</p>
-                        <p class="about-sec4profiledesignation">Designation</p>
-                        <p class="about-sec4profilediscription">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor</p>
+                <div class="item about-sec4profiles">
+                    <img src="./assests/aboutus/section4img1.png" alt="profile1" class="about-sec4img1">
+                    <p class="about-sec4profilename">Rajesh Sharma</p>
+                    <p class="about-sec4profiledesignation">Designation</p>
+                    <p class="about-sec4profilediscription">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor</p>
 
-                    </div>
-                    <div class="item about-sec4profiles">
-                        <img src="./assests/aboutus/section4img1.png" alt="profile1" class="about-sec4img1">
-                        <p class="about-sec4profilename">Rajesh Sharma</p>
-                        <p class="about-sec4profiledesignation">Designation</p>
-                        <p class="about-sec4profilediscription">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor</p>
+                </div>
+                <div class="item about-sec4profiles">
+                    <img src="./assests/aboutus/section4img2.png" alt="profile1" class="about-sec4img1">
+                    <p class="about-sec4profilename">Rajesh Sharma</p>
+                    <p class="about-sec4profiledesignation">Designation</p>
+                    <p class="about-sec4profilediscription">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor</p>
 
-                    </div>
-    
+                </div>
+                <div class="item about-sec4profiles">
+                    <img src="./assests/aboutus/section4img1.png" alt="profile1" class="about-sec4img1">
+                    <p class="about-sec4profilename">Rajesh Sharma</p>
+                    <p class="about-sec4profiledesignation">Designation</p>
+                    <p class="about-sec4profilediscription">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor</p>
+
+                </div>
+
             </div>
+
+
+            <!-- **********************owl*********************** -->
             <div class="about-sec4parentprofile-mobile">
                 <div class="owl-carousel owl-theme">
                     <div class="item about-sec4profiles">
@@ -211,7 +217,7 @@
         </div>
     </div>
 
-  
+
     <!-- <%- include('../components/footer') %> -->
     </div>
 
@@ -221,12 +227,13 @@
 <!-- section3 owl corusel -->
 
 <script>
-    $('.owl-carousel2').owlCarousel({
+    $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
-        nav: false,
+        dots: true,
+        nav: true,
         responsive: {
-            
+
             0: {
                 items: 1
             },
@@ -247,24 +254,25 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: false,
-            responsive: {
-                
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 2
-                },
-                1000: {
-                    items: 5
-                }
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        dots: true,
+        nav: true,
+        responsive: {
+
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 5
             }
-        })
-    </script>
+        }
+    })
+</script>
 
 </html>

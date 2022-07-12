@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <%- include('../components/nav') %>
+    <!-- <%- include('../components/nav') %> -->
     <div class="contact-maincontainer">
         <div class="contact-background">
             <p class="contact-contact">Contact us</p>
@@ -23,25 +23,28 @@
                         questions answered.</p>
                     <div class="contact-formimg">
                         <img src="./assests/contactus/conatctimg.svg" alt="formpageimage" class="contact-sec1img">
-                        <form action="/contact-form" method="POST" class="contact-formparent" onsubmit="validation()" name ="contactform">
+                        <form action="/contact-form" method="POST" class="contact-formparent" onsubmit="validation()"
+                            name="contactform">
                             <div class="contact-formmain">
                                 <div class="contact-form">
                                     <label for="First Name" class="labelname">First Name</label><br>
-                                    <input type="text" id="name" class="name" name="Name">
+                                    <input type="text" id="name" class="name" name="Name" required maxlength="45">
                                 </div>
                                 <div class="contact-form">
                                     <label for="Last Name" class="labelname">Last Name</label><br>
-                                    <input type="text" id="name" class="name" name="LastName">
+                                    <input type="text" id="name" class="name" name="LastName" required maxlength="45">
                                 </div>
                             </div>
                             <div class="contact-formmain">
                                 <div class="contact-form">
                                     <label for="Phone Number" class="labelname">Phone Number</label><br>
-                                    <input type="telephone" id="name" pattern="/^\d{10}$/" class="name" name="Telephone">
+                                    <input type="telephone" id="name" pattern="[0-9]{3}" class="name"
+                                        name="Telephone" required>
                                 </div>
                                 <div class="contact-form">
                                     <label for="Email" class="labelname">Email</label><br>
-                                    <input type="email" pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g" id="name" class="name" name ="Email"  >
+                                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="name"
+                                        class="name" name="Email" required>
                                 </div>
                             </div>
                             <div class="contact-textmain">
@@ -62,22 +65,21 @@
         </div>
 
     </div>
-    <%- include('../components/footer') %>
+    <!-- <%- include('../components/footer') %> -->
     <script>
-        function validation()
-        {
+        function validation() {
 
-let result=document.contactform.values;
-if(result=="")
-{
-  window.alert("please fill all  details ");
-    return false;
-}
-return true;
+            let result = document.contact - formparent.value;
+            if (result == " ") {
+                window.alert("please fill all  details ");
+                return false
+            }
+            else
+                return true
         }
 
-        </script>
-<!-- 
+    </script>
+    <!-- 
     <script>
         function validation()
         {
