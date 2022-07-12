@@ -207,6 +207,9 @@
     font-size: 14px;
     cursor: pointer;
 }
+.MobileCards{
+    display: none;
+}
 @media screen and (max-width:1080px) {
     .nursery-sec1heading {
         font-size: 30px;
@@ -266,6 +269,189 @@
     }
     .nursery-sec3numbers {
         width: 11%;
+    }
+    .nursery-sec3img {
+        width: 60%;
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .nursery-sec2parentbuttons {
+        margin: -20% 0% 5% 0%;
+    }
+}
+@media screen and (max-width:700px) {
+    .desktopCards{
+        display: none;
+    }
+    .MobileCards{
+        display: block;
+        padding: 1% 10%;   
+        margin: 5% 0 0;
+    }
+    .nursery-sec2maincards .owl-carousel .owl-item img {
+        display: block;
+        width: 81%;
+        margin: auto;
+    }
+    /* -------------- */
+    .nursery-sec4price, .nursery-sec4notprice {
+        font-size: 19px;
+    }
+
+    .nursery-sec4heading {
+        font-size: 16px;
+        padding: 2% 28% 0% 7%;
+    }
+    .nursery-sec4para {
+        padding: 1% 42% 2% 7%;
+    }
+
+    .nursery-sec1heading {
+        padding: 0% 35% 0% 0%;
+    }
+    .nursery-sec2parentbuttons {
+        margin: 0% 0% 5% 0%;
+    }
+    .nursery-parentcards {
+        margin: -20% 0 0;
+    }
+    .nursery-sec2parentbuttons {
+        display: block;
+        width: 445px;
+        overflow-x: scroll;
+        white-space: nowrap;
+        margin: auto;
+        height: 70px;
+    }
+    .nursery-sec2button {
+        display: inline-block;
+        padding: 2% 6%;
+        margin: 3% 2% 0;
+    }
+    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-next span{
+        display: none;
+    }
+    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-prev span{
+        display: none
+    }
+    .nursery-sec2maincards .owl-theme .owl-dots .owl-dot {
+        display: none;
+    }
+    
+    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-prev{
+        height: 40px;
+        width: 40px;
+        background-image: url('../../assests/home/leftActive.png');
+        background-size: 100% 100%;
+        position: absolute;
+        left: -5%;
+           top: 40%;
+
+    }
+    
+    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-next{
+        height: 40px;
+        width: 40px;
+        background-image: url('../../assests/home/rightActive.png');
+        background-size: 100% 100%;
+        position: absolute;
+        right: -5%;
+           top: 40%;
+
+    }
+}
+@media screen and (max-width:600px) {
+    .nursery-container {
+        height: 92vh;
+        background-size: 100% 50%;
+    }
+    .nursery-sec1para {
+        padding: 5% 0 4%;
+        font-size: 17px;
+    }
+    /* .nursery-sec1heading {
+        padding: 0% 12% 0% 0%;
+    } */
+    .nursery-sec2button {
+        font-size: 16px;
+    }
+    .MobileCards {
+        padding: 1% 13%;
+    }
+    .nursery-sec4container{
+        background: url('../../assests/nurseryinnerpage/1000mob.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 0 0 26%;
+    }
+    .nursery-sec4heading {
+        font-size: 19px;
+        padding: 4% 9% 2%;
+    }
+    .nursery-sec4para {
+        padding: 1% 9% 3%;
+       
+    }
+    .nursery-sec4button {
+        font-size: 15px;
+        padding: 2% 3%;
+    }
+    .nursery-container{
+        background: url('../../assests/nurseryinnerpage/nuresery-mob-bg.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: top;
+        height: 800px;
+    }
+    .nursery-sec1mainheadings {
+        padding: 13% 9% 0;
+    }
+    .nursery-sec1heading {
+        padding: 0% 0% 0%;
+    }
+    .nursery-parentcards {
+        margin: 4% 0 0;
+    }
+}
+@media screen and (max-width:510px) {
+    .nursery-sec2parentbuttons {
+        width: 362px;
+    }
+    .MobileCards {
+        padding: 2% 10%;
+    }
+    .nursery-sec2maincards .owl-carousel .owl-item img {
+        width: 69%;
+    }
+}
+@media screen and (max-width:410px) {
+    .nursery-sec1para {
+        padding: 5% 0 6%;
+        font-size: 15px;
+    }
+    .nursery-sec2button {
+        padding: 3% 10%;
+        margin: 3% 4% 0;
+    }
+    .nursery-sec2parentbuttons {
+        width: 332px;
+    }
+    .nursery-sec3para {
+        font-size: 14px;
+    }
+    .nursery-sec3numbers {
+        width: 17%;
+    }
+    .nursery-sec3childcontent {
+        padding-bottom: 6%;
+    }
+    .nursery-sec4button {
+        font-size: 13px;
+        margin: 4% 0 6% 7%;
+    }
+    .nursery-sec4container {
+        padding: 0 0 34%;
     }
 }
 
