@@ -204,6 +204,9 @@
 .section5Content {
     margin: 4% 0 0;
 }
+.section5-sub-mob{
+    display: none;
+}
 
 /* -----------section6---------------- */
 
@@ -436,6 +439,9 @@
     .section5-sub{
         display: none;
     }
+    .section5-sub-mob{
+        display: block;
+    }
     .section5Journey {
         width: 85%;
         margin: auto;
@@ -450,7 +456,252 @@
         padding: 0 4%;
         margin: 4% 0;
     }
+    .section5-sub-mob .owl-carousel .owl-nav button.owl-next span{
+        display: none;
+    }
+    .section5-sub-mob .owl-carousel .owl-nav button.owl-prev span{
+        display: none
+    }
+    .section5-sub-mob .owl-theme .owl-dots .owl-dot {
+        display: none;
+    }
+    
+    .section5-sub-mob .owl-carousel .owl-nav button.owl-prev{
+        height: 40px;
+        width: 40px;
+        background-image: url('../../assests/home/leftActive.png');
+        background-size: 100% 100%;
+        position: absolute;
+        left: 2%;
+        top: 32%;
+    }
+    
+    .section5-sub-mob .owl-carousel .owl-nav button.owl-next{
+        height: 40px;
+        width: 40px;
+        background-image: url('../../assests/home/rightActive.png');
+        background-size: 100% 100%;
+        position: absolute;
+        right: 2%;
+        top: 32%;
+    }
 }
+@media screen and (max-width:580px) {
+    .sectionBg{
+        background: url('../../assests/home/home-bg-mob.svg');
+        padding: 4% 0 0;
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .homeContent {
+        font-size: 16px;
+        padding: 4% 0% 4% 0;
+    }
+    .homeSection1 {
+        width: 100%;
+        padding: 9% 11% 76% 9%;
+    }
+    .section2imgContent {
+        margin: 0 0 7%;
+    }
+    .homeHead2 {
+        padding: 7% 0 2%;
+    }
+    .section2Content {
+        margin: 5% 0 3%;
+    }
+    .section3-sub {
+        padding: 0 3% 0;
+    }
+    .section3Details {
+        margin: 0 0 7%;
+    }
+
+    .section3ImgDetail>img {
+        width: 49px;
+        height: 49px;
+    }
+    .section2Content>div:nth-of-type(1)>img {
+        width: 93%;
+    }
+    .sectin3self>p:nth-of-type(2) {
+        font-size: 15px;
+    }
+    .sectin3self>p:nth-of-type(1) {
+        font-size: 19px;
+    }
+    .section2SubContent>p:nth-of-type(2) {
+        font-size: 15px;
+        margin: 4% 0% 0% -12%;
+    }
+    .section2SubContent>p:nth-of-type(1) {
+        font-size: 19px;
+    }
+    .homeImg-section {
+        padding: 0 1%;
+    }
+    .sectin3self {
+        padding: 0% 0% 0 2%;
+        margin: 3% 0 0;
+    }
+    .sectin3self>p:nth-of-type(2) {
+        margin: 6% 0 0 -14%;
+    }
+    .section3-sub {
+        padding: 0px 7% 0;
+    }
+    .section4board{
+        background: url('../../assests/home/blackboard-mob.png');
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    }
+    .section4grades{
+        height: 640px;
+        overflow-x: scroll;
+        gap: 3%;
+        margin: 4% 0 0;
+    } 
+    .eachGrade {
+        width: 51%;
+    }
+    .section5-sub-mob {
+        padding: 0 9%;
+        margin: 4% auto;
+    }
+    .section5-sub-mob .owl-carousel .owl-item img {
+        width: 65%;
+    }
+    .section6carousel {
+        padding: 0% 5%;
+    }
+    .parentCard {
+        width: 90%;
+    }
+    .section3child {
+        width: 77%;
+    }
+    .section5-sub-mob .owl-carousel .owl-nav button.owl-prev{
+        left: 0%;
+    }
+    
+    .section5-sub-mob .owl-carousel .owl-nav button.owl-next{
+        right: 0%;
+    } 
+    .eachGrade {
+        width: 66%;
+    }
+    /* .section6carousel {
+        padding: 0% 3%;
+    } */
+}
+@media screen and (max-width:440px) {
+    .homeContent {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .homeHead {
+        font-size: 23px;
+    }
+    .homeHead2 {
+        padding: 10% 0 3%;
+        font-size: 20px;
+    }
+    .section2img>img {
+        width: 28px;
+        height: 28px;
+    }
+    .section2SubContent>p:nth-of-type(2) {
+        margin: 7% 0% 0% -12%;
+    }
+    .section2imgContent {
+        margin: 0 0 9%;
+    }
+    .section2Content>div:nth-of-type(1)>img {
+        width: 100%;
+    }
+    .section3ImgDetail>img {
+        width: 43px;
+        height: 43px;
+    }
+    .sectin3self>p:nth-of-type(1) {
+        font-size: 17px;
+    }
+    .sectin3self>p:nth-of-type(2) {
+        margin: 7% 0 0 -14%;
+    }
+    .sectin3self>p:nth-of-type(2) {
+        font-size: 14px;
+    }
+    .section3child {
+        width: 90%;
+    }
+    .eachGradeimg>img {
+        width: 132px;
+        height: 117px;
+    }
+    .section5Content>p:nth-of-type(1) {
+        font-size: 17px;
+    }
+    .section5Content>p:nth-of-type(2) {
+        font-size: 14px;
+    }
+    .section2SubContent>p:nth-of-type(1) {
+        font-size: 17px;
+    }
+    .section2SubContent>p:nth-of-type(2) {
+        font-size: 14px;
+    }
+    .homeSection1 {
+        padding: 5% 11% 96% 9%;
+    } 
+    .homeSection2 {
+        padding: 1% 3%;
+    }
+    .section3-sub {
+        padding: 0px 3% 0;
+    }
+    .parentCard {
+        width: 89%;
+    }
+    .section5-sub-mob .owl-carousel .owl-item img {
+        width: 52%;
+    }
+}
+@media screen and (max-width:380px) {
+    /* .homeSection1 {
+        padding: 5% 11% 96% 9%;
+    }    */
+    .homeImg-section {
+        margin: 6% 0 0;
+    } 
+    .section2SubContent>p:nth-of-type(2) {
+        margin: 7% 0% 0% -16%;
+    }
+    .section3Details {
+        margin: 0 0 9%;
+    }
+    .sectin3self>p:nth-of-type(2) {
+        margin: 9% 0 0 -18%;
+    }
+    .section5-sub-mob .owl-carousel .owl-item img {
+        width: 52%;
+    }
+    /* .parentCard {
+        width: 89%;
+    } */
+    .parentDetails>p:nth-of-type(3) {
+        font-size: 12px;
+    }
+    .parentDetails>p:nth-of-type(1) {
+        font-size: 13px;
+    }
+    .parentDetails>h5 {
+        font-size: 16px;
+    }
+}
+
 
 
 
