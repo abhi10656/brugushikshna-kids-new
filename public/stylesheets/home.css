@@ -596,6 +596,11 @@
         padding: 0% 3%;
     } */
 }
+@media screen and (max-width:560px) {
+    .section5-sub-mob .owl-carousel .owl-item img {
+        width: 44%;
+    }
+}
 @media screen and (max-width:440px) {
     .homeContent {
         font-size: 15px;

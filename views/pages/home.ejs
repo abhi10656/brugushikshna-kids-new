@@ -265,7 +265,7 @@
 
 
                     <div class="section5-sub-mob">
-                        <div class="owl-carousel newkids owl-theme">
+                        <div class="newkids owl-carousel owl-theme">
                             <div class="section5Journey">
                                 <div class="section5img">
                                     <img src="../../assests/home/signup.png" alt="signup">
@@ -304,7 +304,7 @@
                 <div class="homeSection6">
                     <h2 class="homeHead2">Parent Testimonials</h2>
                     <div class="section6carousel">
-                        <div class="owl-carousel owl-theme">
+                        <div class="parentTest owl-carousel owl-theme">
                             <div class="item parentCard">
                                 <div class="parentImg"> <img src="../../assests/home/parentsimg.png" alt="parentimg">
                                 </div>
@@ -316,7 +316,6 @@
                                         incididunt ut labore et dolore magna aliqua. "</p>
                                 </div>
                             </div>
-
                             <div class="item parentCard">
                                 <div class="parentImg"> <img src="../../assests/home/parentsimg.png" alt="parentimg">
                                 </div>
@@ -328,8 +327,6 @@
                                         incididunt ut labore et dolore magna aliqua. "</p>
                                 </div>
                             </div>
-
-
                             <div class="item parentCard">
                                 <div class="parentImg"> <img src="../../assests/home/parentsimg.png" alt="parentimg">
                                 </div>
@@ -341,7 +338,6 @@
                                         incididunt ut labore et dolore magna aliqua. "</p>
                                 </div>
                             </div>
-
                             <div class="item parentCard">
                                 <div class="parentImg"> <img src="../../assests/home/parentsimg.png" alt="parentimg">
                                 </div>
@@ -370,10 +366,10 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
-    $('.owl-carousel').owlCarousel({
-        loop: true,
+    $('.parentTest.owl-carousel').owlCarousel({
+        loop: false,
         margin: 10,
-        nav: true,
+        nav: false,
         center: true,
         responsive: {
             0: {
@@ -387,11 +383,10 @@
                 items: 3
             }
         }
-    })
+    });
 
-
-    $('.owl-carousel.newkids').owlCarousel({
-        loop: false,
+    $('.newkids.owl-carousel').owlCarousel({
+        loop: true,
         margin: 10,
         nav: true,
         center: true,
