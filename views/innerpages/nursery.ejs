@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="MobileCards">
-                <div class="nursery-sec2maincards">
+                <div class="nursery-sec2mainMob">
                     <div class="Nurserycards owl-carousel owl-theme">
                         <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
                         <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
@@ -80,24 +80,24 @@
                         <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
                     </div>
                 </div>
-                <div class="nursery-sec2maincards">
-                    <div class="Nurserycards owl-carousel owl-theme" style="display: none;">
+                <div class="nursery-sec2mainMob" style="display: none;">
+                    <div class="Nurserycards owl-carousel owl-theme">
                         <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
                         <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
                         <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
                         <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
                     </div>
                 </div>
-                <div class="nursery-sec2maincards">
-                    <div class="Nurserycards owl-carousel owl-theme" style="display: none;">
+                <div class="nursery-sec2mainMob" style="display: none;">
+                    <div class="Nurserycards owl-carousel owl-theme">
                         <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
                         <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
                         <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
                         <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
                     </div>
                 </div>
-                <div class="nursery-sec2maincards">
-                    <div class="Nurserycards owl-carousel owl-theme" style="display: none;">
+                <div class="nursery-sec2mainMob" style="display: none;">
+                    <div class="Nurserycards owl-carousel owl-theme">
                         <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
                         <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
                         <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
@@ -176,7 +176,7 @@
         loop: false,
         margin: 10,
         nav: true,
-        center: true,
+        dots: false,
         responsive: {
             0: {
                 items: 1
@@ -204,6 +204,14 @@
             carousel.style.display = "none";
         });
         carousels[el.dataset.index - 1].style.display = "flex";
+
+        let mobcards = [...document.querySelectorAll('.nursery-sec2mainMob')];
+        console.log(mobcards,"dfghj")
+        mobcards.forEach((el)=>{
+            console.log(el,"el")
+            el.style.display = "none";
+        });
+        mobcards[el.dataset.index - 1].style.display = "block";
     }
 </script>
 

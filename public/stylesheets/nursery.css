@@ -289,7 +289,7 @@
         padding: 1% 10%;   
         margin: 5% 0 0;
     }
-    .nursery-sec2maincards .owl-carousel .owl-item img {
+    .nursery-sec2mainMob .owl-carousel .owl-item img {
         display: block;
         width: 81%;
         margin: auto;
@@ -329,17 +329,17 @@
         padding: 2% 6%;
         margin: 3% 2% 0;
     }
-    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-next span{
+    .nursery-sec2mainMob .owl-carousel .owl-nav button.owl-next span{
         display: none;
     }
-    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-prev span{
+    .nursery-sec2mainMob .owl-carousel .owl-nav button.owl-prev span{
         display: none
     }
-    .nursery-sec2maincards .owl-theme .owl-dots .owl-dot {
+    .nursery-sec2mainMob .owl-theme .owl-dots .owl-dot {
         display: none;
     }
     
-    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-prev{
+    .nursery-sec2mainMob .owl-carousel .owl-nav button.owl-prev{
         height: 40px;
         width: 40px;
         background-image: url('../../assests/home/leftActive.png');
@@ -350,7 +350,7 @@
 
     }
     
-    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-next{
+    .nursery-sec2mainMob .owl-carousel .owl-nav button.owl-next{
         height: 40px;
         width: 40px;
         background-image: url('../../assests/home/rightActive.png');
@@ -421,7 +421,7 @@
     .MobileCards {
         padding: 2% 10%;
     }
-    .nursery-sec2maincards .owl-carousel .owl-item img {
+    .nursery-sec2mainMob .owl-carousel .owl-item img {
         width: 69%;
     }
 }
