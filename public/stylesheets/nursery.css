@@ -15,6 +15,7 @@
     font-family: 'Proxima Nova', sans-serif;
 
 }
+
 /* section1 */
 
 .nursery-container {
@@ -58,6 +59,7 @@
     cursor: pointer;
 
 }
+
 /* section2 */
 .nursery-sec2parentbuttons {
     display: flex;
@@ -66,8 +68,11 @@
     margin: -5% 0% 5% 0%;
 
 }
-.Literacy, .arts, .Stroke{
-    display:none
+
+.Literacy,
+.arts,
+.Stroke {
+    display: none
 }
 
 
@@ -94,28 +99,26 @@
 }
 
 /* section3 */
-.nursery-sec3maincontainer
-{
+.nursery-sec3maincontainer {
     border: 2px solid #EAEAE9;
     border-radius: 10px;
     margin: 5% 8%;
     padding: 2% 3%;
 
-  
-    
+
+
 }
-.nursery-sec3img
-{
+
+.nursery-sec3img {
     width: 38%;
 }
 
-.nursery-sec3container
-{
+.nursery-sec3container {
     display: flex;
- gap: 10%;
+    gap: 10%;
 }
-.nursery-sec3heading
-{
+
+.nursery-sec3heading {
     text-align: center;
     -webkit-text-stroke-width: thin;
     font-size: 23px;
@@ -124,178 +127,202 @@
 
 }
 
-.nursery-sec3childcontent
-{
+.nursery-sec3childcontent {
     display: flex;
-    width:100%;
+    width: 100%;
     padding-bottom: 4%;
     gap: 3%;
     align-items: center;
 }
-.nursery-sec3para
-{
+
+.nursery-sec3para {
     font-size: 15px;
     font-weight: 600;
-    padding-right:10%;
+    padding-right: 10%;
     line-height: 1.3;
 }
-.nursery-sec3numbers
-{
+
+.nursery-sec3numbers {
     width: 10%;
-    
+
 }
+
 /* section4 */
-.nursery-sec4container
-{
+.nursery-sec4container {
     background-image: url("../../assests/nurseryinnerpage/section4img.png");
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
 }
-.nursery-sec4maincontainer
-{
-    margin: 5% 8% ;
+
+.nursery-sec4maincontainer {
+    margin: 5% 8%;
 }
-.nursery-sec4heading
-{
+
+.nursery-sec4heading {
     font-family: 'Comic Sans MS';
     font-size: 25px;
     -webkit-text-stroke-width: thin;
     padding: 1% 53% 0% 7%;
 
 }
-.nursery-sec4para
-{
+
+.nursery-sec4para {
     padding: 1% 46% 2% 7%;
     font-size: 13px;
     line-height: 1.3;
     letter-spacing: 0px;
 }
-.nursery-sec4parentprice
-{
+
+.nursery-sec4parentprice {
     display: flex;
     gap: 2%;
     padding: 0 0 0 7%;
     margin: 0 0 2% 0;
     position: relative;
 }
-.nursery-sec4price
-{
-    color:#4DD42B;
+
+.nursery-sec4price {
+    color: #4DD42B;
 }
+
 .nursery-sec4notprice {
-    background-image: repeating-linear-gradient(163deg, transparent 0%, transparent 46%,red 50%, transparent 52%, transparent 100%);
+    background-image: repeating-linear-gradient(163deg, transparent 0%, transparent 46%, red 50%, transparent 52%, transparent 100%);
 }
-  
-    
-.nursery-sec4price,.nursery-sec4notprice
-{
+
+
+.nursery-sec4price,
+.nursery-sec4notprice {
     font-size: 25px;
     -webkit-text-stroke-width: thin;
 }
-.nursery-sec4button
-{
+
+.nursery-sec4button {
     background-color: #FF8A00;
     font-family: 'Comic Sans MS';
     border: none;
     color: #fff;
     /* width: 16%; */
-    margin:0 0 6% 7%;
+    margin: 0 0 6% 7%;
     padding: 1% 2%;
     border-radius: 10px;
     font-size: 14px;
     cursor: pointer;
 }
-.MobileCards{
+
+.MobileCards {
     display: none;
 }
+
 @media screen and (max-width:1080px) {
     .nursery-sec1heading {
         font-size: 30px;
         padding: 0% 53% 0% 0%;
     }
+
     .nursery-sec1para {
         padding: 3% 54% 3% 0%;
     }
+
     .nursery-sec2button {
         font-size: 21px;
     }
 }
+
 @media screen and (max-width:965px) {
     .nursery-sec1button {
         font-size: 15px;
     }
+
     .nursery-sec4heading {
         font-size: 23px;
         padding: 2% 53% 0% 7%;
     }
+
     .nursery-sec3numbers {
         width: 13%;
     }
 }
+
 @media screen and (max-width:846px) {
     .nursery-sec1heading {
         font-size: 27px;
         padding: 0% 46% 0% 0%;
     }
+
     .nursery-sec1para {
         padding: 3% 53% 3% 0%;
     }
+
     .nursery-sec2button {
         font-size: 19px;
     }
+
     .nursery-sec3para {
         font-size: 13px;
         padding-right: 2%;
     }
+
     .nursery-sec4heading {
         font-size: 20px;
         padding: 2% 40% 0% 7%;
     }
+
     .nursery-sec4button {
         font-size: 13px;
     }
+
     .nursery-sec2parentbuttons {
         margin: -11% 0% 5% 0%;
     }
 }
+
 @media screen and (max-width:750px) {
-    .nursery-sec3container{
+    .nursery-sec3container {
         flex-direction: column-reverse;
     }
+
     .nursery-sec3para {
         font-size: 16px;
     }
+
     .nursery-sec3numbers {
         width: 11%;
     }
+
     .nursery-sec3img {
         width: 60%;
         display: block;
         margin: auto;
         text-align: center;
     }
+
     .nursery-sec2parentbuttons {
         margin: -20% 0% 5% 0%;
     }
 }
+
 @media screen and (max-width:700px) {
-    .desktopCards{
+    .desktopCards {
         display: none;
     }
-    .MobileCards{
+
+    .MobileCards {
         display: block;
-        padding: 1% 10%;   
+        padding: 1% 10%;
         margin: 5% 0 0;
     }
+
     .nursery-sec2maincards .owl-carousel .owl-item img {
         display: block;
         width: 81%;
         margin: auto;
     }
+
     /* -------------- */
-    .nursery-sec4price, .nursery-sec4notprice {
+    .nursery-sec4price,
+    .nursery-sec4notprice {
         font-size: 19px;
     }
 
@@ -303,6 +330,7 @@
         font-size: 16px;
         padding: 2% 28% 0% 7%;
     }
+
     .nursery-sec4para {
         padding: 1% 42% 2% 7%;
     }
@@ -310,12 +338,15 @@
     .nursery-sec1heading {
         padding: 0% 35% 0% 0%;
     }
+
     .nursery-sec2parentbuttons {
         margin: 0% 0% 5% 0%;
     }
+
     .nursery-parentcards {
         margin: -20% 0 0;
     }
+
     .nursery-sec2parentbuttons {
         display: block;
         width: 445px;
@@ -324,141 +355,160 @@
         margin: auto;
         height: 70px;
     }
+
     .nursery-sec2button {
         display: inline-block;
         padding: 2% 6%;
         margin: 3% 2% 0;
     }
-    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-next span{
+
+    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-next span {
         display: none;
     }
-    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-prev span{
+
+    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-prev span {
         display: none
     }
+
     .nursery-sec2maincards .owl-theme .owl-dots .owl-dot {
         display: none;
     }
-    
-    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-prev{
+
+    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-prev {
         height: 40px;
         width: 40px;
         background-image: url('../../assests/home/leftActive.png');
         background-size: 100% 100%;
         position: absolute;
         left: -5%;
-           top: 40%;
+        top: 40%;
 
     }
-    
-    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-next{
+
+    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-next {
         height: 40px;
         width: 40px;
         background-image: url('../../assests/home/rightActive.png');
         background-size: 100% 100%;
         position: absolute;
         right: -5%;
-           top: 40%;
+        top: 40%;
 
     }
 }
+
 @media screen and (max-width:600px) {
     .nursery-container {
         height: 92vh;
         background-size: 100% 50%;
     }
+
     .nursery-sec1para {
         padding: 5% 0 4%;
         font-size: 17px;
     }
+
     /* .nursery-sec1heading {
         padding: 0% 12% 0% 0%;
     } */
     .nursery-sec2button {
         font-size: 16px;
     }
+
     .MobileCards {
         padding: 1% 13%;
     }
-    .nursery-sec4container{
+
+    .nursery-sec4container {
         background: url('../../assests/nurseryinnerpage/1000mob.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         padding: 0 0 26%;
     }
+
     .nursery-sec4heading {
         font-size: 19px;
         padding: 4% 9% 2%;
     }
+
     .nursery-sec4para {
         padding: 1% 9% 3%;
-       
+
     }
+
     .nursery-sec4button {
         font-size: 15px;
         padding: 2% 3%;
     }
-    .nursery-container{
+
+    .nursery-container {
         background: url('../../assests/nurseryinnerpage/nuresery-mob-bg.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: top;
         height: 800px;
     }
+
     .nursery-sec1mainheadings {
         padding: 13% 9% 0;
     }
+
     .nursery-sec1heading {
         padding: 0% 0% 0%;
     }
+
     .nursery-parentcards {
         margin: 4% 0 0;
     }
 }
+
 @media screen and (max-width:510px) {
     .nursery-sec2parentbuttons {
         width: 362px;
     }
+
     .MobileCards {
         padding: 2% 10%;
     }
+
     .nursery-sec2maincards .owl-carousel .owl-item img {
         width: 69%;
     }
 }
+
 @media screen and (max-width:410px) {
     .nursery-sec1para {
         padding: 5% 0 6%;
         font-size: 15px;
     }
+
     .nursery-sec2button {
         padding: 3% 10%;
         margin: 3% 4% 0;
     }
+
     .nursery-sec2parentbuttons {
         width: 332px;
     }
+
     .nursery-sec3para {
         font-size: 14px;
     }
+
     .nursery-sec3numbers {
         width: 17%;
     }
+
     .nursery-sec3childcontent {
         padding-bottom: 6%;
     }
+
     .nursery-sec4button {
         font-size: 13px;
         margin: 4% 0 6% 7%;
     }
+
     .nursery-sec4container {
         padding: 0 0 34%;
     }
 }
-
-
-
-
-
-
-
-
