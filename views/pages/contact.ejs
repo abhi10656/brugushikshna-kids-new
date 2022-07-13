@@ -10,76 +10,77 @@
 </head>
 
 <body>
-    <!-- <%- include('../components/nav') %> -->
-    <div class="contact-maincontainer">
-        <div class="contact-background">
-            <p class="contact-contact">Contact us</p>
+    <%- include('../components/nav') %>
+        <div class="contact-maincontainer">
+            <div class="contact-background">
+                <p class="contact-contact">Contact us</p>
 
-            <div class="contact-sec1parent">
-                <div class="contact-sec1child">
-                    <p class="contact-sec1heading">HOW CAN WE HELP YOU?</p>
-                    <p class="contact-sec1para">Do you want to sign up for our newsletter? Choose the mailing list
-                        from the drop-down menu. You can enquire and recommend us. Fill in your doubts to get your
-                        questions answered.</p>
-                    <div class="contact-formimg">
-                        <img src="./assests/contactus/conatctimg.svg" alt="formpageimage" class="contact-sec1img">
-                        <form action="/contact-form" method="POST" class="contact-formparent" onsubmit="validation()"
-                            name="contactform">
-                            <div class="contact-formmain">
-                                <div class="contact-form">
-                                    <label for="First Name" class="labelname">First Name</label><br>
-                                    <input type="text" id="name" class="name" name="Name" required maxlength="45">
+                <div class="contact-sec1parent">
+                    <div class="contact-sec1child">
+                        <p class="contact-sec1heading">HOW CAN WE HELP YOU?</p>
+                        <p class="contact-sec1para">Do you want to sign up for our newsletter? Choose the mailing list
+                            from the drop-down menu. You can enquire and recommend us. Fill in your doubts to get your
+                            questions answered.</p>
+                        <div class="contact-formimg">
+                            <img src="./assests/contactus/conatctimg.svg" alt="formpageimage" class="contact-sec1img">
+                            <form action="/contact-form" method="POST" class="contact-formparent"
+                                onsubmit="validation()" name="contactform">
+                                <div class="contact-formmain">
+                                    <div class="contact-form">
+                                        <label for="First Name" class="labelname">First Name</label><br>
+                                        <input type="text" id="name" class="name" name="Name" required maxlength="45">
+                                    </div>
+                                    <div class="contact-form">
+                                        <label for="Last Name" class="labelname">Last Name</label><br>
+                                        <input type="text" id="name" class="name" name="LastName" required
+                                            maxlength="45">
+                                    </div>
                                 </div>
-                                <div class="contact-form">
-                                    <label for="Last Name" class="labelname">Last Name</label><br>
-                                    <input type="text" id="name" class="name" name="LastName" required maxlength="45">
+                                <div class="contact-formmain">
+                                    <div class="contact-form">
+                                        <label for="Phone Number" class="labelname">Phone Number</label><br>
+                                        <input type="telephone" id="name" pattern="[0-9]{3}" class="name"
+                                            name="Telephone" required>
+                                    </div>
+                                    <div class="contact-form">
+                                        <label for="Email" class="labelname">Email</label><br>
+                                        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="name"
+                                            class="name" name="Email" required>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="contact-formmain">
-                                <div class="contact-form">
-                                    <label for="Phone Number" class="labelname">Phone Number</label><br>
-                                    <input type="telephone" id="name" pattern="[0-9]{3}" class="name"
-                                        name="Telephone" required>
-                                </div>
-                                <div class="contact-form">
-                                    <label for="Email" class="labelname">Email</label><br>
-                                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="name"
-                                        class="name" name="Email" required>
-                                </div>
-                            </div>
-                            <div class="contact-textmain">
+                                <div class="contact-textmain">
 
-                                <label for="Message" class="labelname">Message</label><br>
-                                <textarea name="text" id="message" cols="60" rows="3"
-                                    class="textareamessage"></textarea>
-                            </div>
-                            <div class="contact-parentbutton">
-                                <button class="contact-sumbitbutton">Submit</button>
-                            </div>
-                        </form>
+                                    <label for="Message" class="labelname">Message</label><br>
+                                    <textarea name="text" id="message" cols="60" rows="3"
+                                        class="textareamessage"></textarea>
+                                </div>
+                                <div class="contact-parentbutton">
+                                    <button class="contact-sumbitbutton">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+
                     </div>
 
                 </div>
-
             </div>
+
         </div>
+        <%- include('../components/footer') %>
+            <script>
+                function validation() {
 
-    </div>
-    <!-- <%- include('../components/footer') %> -->
-    <script>
-        function validation() {
+                    let result = document.contact - formparent.value;
+                    if (result == " ") {
+                        window.alert("please fill all  details ");
+                        return false
+                    }
+                    else
+                        return true
+                }
 
-            let result = document.contact - formparent.value;
-            if (result == " ") {
-                window.alert("please fill all  details ");
-                return false
-            }
-            else
-                return true
-        }
-
-    </script>
-    <!-- 
+            </script>
+            <!-- 
     <script>
         function validation()
         {

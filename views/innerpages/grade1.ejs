@@ -10,110 +10,113 @@
 </head>
 
 <body>
-    <!-- <%- include('../components/nav') %> -->
-    <div class="nursery-maincontainer">
-        <div class="nursery-container">
-            <div class="nursery-sec1mainheadings">
-                <p class="nursery-sec1heading">Parents! Worried about the upcoming academic challenges and
-                    Want to join them in tuition?
+    <%- include('../components/nav') %>
+        <div class="nursery-maincontainer">
+            <div class="nursery-container">
+                <div class="nursery-sec1mainheadings">
+                    <p class="nursery-sec1heading">Parents! Worried about the upcoming academic challenges and
+                        Want to join them in tuition?
 
-                </p>
-                <p class="nursery-sec1para">No, need! Brugusikshan's worksheets for Grade 1 perfectly blend the CBSE
-                    curriculum and fun impulsed activities like easy crosswords, puzzles and Maths problems. Solving one
-                    activity daily would prepare your kid for even hectic schedules. </p>
-                <button class="nursery-sec1button">Grade 1 Worksheets Kit</button>
+                    </p>
+                    <p class="nursery-sec1para">No, need! Brugusikshan's worksheets for Grade 1 perfectly blend the CBSE
+                        curriculum and fun impulsed activities like easy crosswords, puzzles and Maths problems. Solving
+                        one
+                        activity daily would prepare your kid for even hectic schedules. </p>
+                    <button class="nursery-sec1button">Grade 1 Worksheets Kit</button>
+
+                </div>
+            </div>
+            <div class="nursery-parentcards">
+                <div class="nursery-sec2parentbuttons">
+                    <button class="nursery-sec2button" data-index="1" onclick="handletabs(this)"
+                        style="background-color: #FC7E82; outline: 10px solid #FECBCD;">Maths</button>
+                    <button class="nursery-sec2button" data-index="2" onclick="handletabs(this)"
+                        style="background-color: #FAC800;">English
+
+                    </button>
+                    <button class="nursery-sec2button" data-index="3" onclick="handletabs(this)"
+                        style="background-color: #7B61F8;">EVS</button>
+
+
+                </div>
+                <div class="nursery-sec2maincards">
+                    <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
+                    <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
+                    <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
+                    <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
+                </div>
+                <div class="nursery-sec2maincards" style="display: none;">
+                    <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
+                    <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
+                    <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
+                    <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
+                </div>
+                <div class="nursery-sec2maincards" style="display: none;">
+                    <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
+                    <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
+                    <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
+                    <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
+                </div>
 
             </div>
-        </div>
-        <div class="nursery-parentcards">
-            <div class="nursery-sec2parentbuttons">
-                <button class="nursery-sec2button" data-index="1" onclick="handletabs(this)"
-                    style="background-color: #FC7E82; outline: 10px solid #FECBCD;">Maths</button>
-                <button class="nursery-sec2button" data-index="2" onclick="handletabs(this)"
-                    style="background-color: #FAC800;">English
 
-                </button>
-                <button class="nursery-sec2button" data-index="3" onclick="handletabs(this)"
-                    style="background-color: #7B61F8;">EVS</button>
+            <div class="nursery-sec3maincontainer">
 
-
-            </div>
-            <div class="nursery-sec2maincards">
-                <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
-                <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
-                <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
-                <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
-            </div>
-            <div class="nursery-sec2maincards" style="display: none;">
-                <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
-                <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
-                <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
-                <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
-            </div>
-            <div class="nursery-sec2maincards" style="display: none;">
-                <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
-                <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
-                <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
-                <img src="./assests/nurseryinnerpage/section2img.png" alt="cards" class="sec2img1">
-            </div>
-
-        </div>
-
-        <div class="nursery-sec3maincontainer">
-
-            <div class="nursery-sec3container">
-                <img src="./assests/nurseryinnerpage/section3img.svg" alt="image of nurseryinnerpage"
-                    class="nursery-sec3img">
-                <div class="nursery-sec3parentcontent">
-                    <p class="nursery-sec3heading">Product Description</p>
-                    <div class="nursery-sec3childcontent">
-                        <img src="./assests/nurseryinnerpage/no1.png" alt="image of number 1"
-                            class="nursery-sec3numbers">
-                        <p class="nursery-sec3para">The Worksheet kit includes 4 books and stationary</p>
-                    </div>
-                    <div class="nursery-sec3childcontent">
-                        <img src="./assests/nurseryinnerpage/no2.png" alt="image of number 2"
-                            class="nursery-sec3numbers">
-                        <p class="nursery-sec3para">Worksheet enhances subtle learning experience to create
-                            logic-building skills</p>
-                    </div>
-                    <div class="nursery-sec3childcontent">
-                        <img src="./assests/nurseryinnerpage/no3.png" alt="image of number 3"
-                            class="nursery-sec3numbers">
-                        <p class="nursery-sec3para">Hands-on Activities and Concept Based Learning</p>
-                    </div>
-                    <div class="nursery-sec3childcontent">
-                        <img src="./assests/nurseryinnerpage/no4.png" alt="image of number 4"
-                            class="nursery-sec3numbers">
-                        <p class="nursery-sec3para">Basic to advanced fun IQ based learning
-                        </p>
-                    </div>
-                    <div class="nursery-sec3childcontent">
-                        <img src="./assests/nurseryinnerpage/no5.png" alt="image of number 4"
-                            class="nursery-sec3numbers">
-                        <p class="nursery-sec3para">Self Explanatory worksheets and answer sheets provided in case of
-                            doubts.
-                        </p>
+                <div class="nursery-sec3container">
+                    <img src="./assests/nurseryinnerpage/section3img.svg" alt="image of nurseryinnerpage"
+                        class="nursery-sec3img">
+                    <div class="nursery-sec3parentcontent">
+                        <p class="nursery-sec3heading">Product Description</p>
+                        <div class="nursery-sec3childcontent">
+                            <img src="./assests/nurseryinnerpage/no1.png" alt="image of number 1"
+                                class="nursery-sec3numbers">
+                            <p class="nursery-sec3para">The Worksheet kit includes 4 books and stationary</p>
+                        </div>
+                        <div class="nursery-sec3childcontent">
+                            <img src="./assests/nurseryinnerpage/no2.png" alt="image of number 2"
+                                class="nursery-sec3numbers">
+                            <p class="nursery-sec3para">Worksheet enhances subtle learning experience to create
+                                logic-building skills</p>
+                        </div>
+                        <div class="nursery-sec3childcontent">
+                            <img src="./assests/nurseryinnerpage/no3.png" alt="image of number 3"
+                                class="nursery-sec3numbers">
+                            <p class="nursery-sec3para">Hands-on Activities and Concept Based Learning</p>
+                        </div>
+                        <div class="nursery-sec3childcontent">
+                            <img src="./assests/nurseryinnerpage/no4.png" alt="image of number 4"
+                                class="nursery-sec3numbers">
+                            <p class="nursery-sec3para">Basic to advanced fun IQ based learning
+                            </p>
+                        </div>
+                        <div class="nursery-sec3childcontent">
+                            <img src="./assests/nurseryinnerpage/no5.png" alt="image of number 4"
+                                class="nursery-sec3numbers">
+                            <p class="nursery-sec3para">Self Explanatory worksheets and answer sheets provided in case
+                                of
+                                doubts.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="nursery-sec4maincontainer">
-            <div class="nursery-sec4container">
-                <p class="nursery-sec4heading">Get your hands on the worksheets that improve your child's problem
-                    solving skills</p>
-                <p class="nursery-sec4para">Brugusikshan academic worksheet kits contain hand-eye coordination, puzzles,
-                    engraving fonts, subject-based concepts and surprising churning learning effects.Let endless
-                    curiosity about learning begin now!</p>
-                <div class="nursery-sec4parentprice">
-                    <h1 class="nursery-sec4notprice">₹1400/-</h1>
-                    <h1 class="nursery-sec4price">₹1000/-</h1>
+            <div class="nursery-sec4maincontainer">
+                <div class="nursery-sec4container">
+                    <p class="nursery-sec4heading">Get your hands on the worksheets that improve your child's problem
+                        solving skills</p>
+                    <p class="nursery-sec4para">Brugusikshan academic worksheet kits contain hand-eye coordination,
+                        puzzles,
+                        engraving fonts, subject-based concepts and surprising churning learning effects.Let endless
+                        curiosity about learning begin now!</p>
+                    <div class="nursery-sec4parentprice">
+                        <h1 class="nursery-sec4notprice">₹1400/-</h1>
+                        <h1 class="nursery-sec4price">₹1000/-</h1>
+                    </div>
+                    <button class="nursery-sec4button">GET A FREE DEMO KIT</button>
                 </div>
-                <button class="nursery-sec4button">GET A FREE DEMO KIT</button>
             </div>
         </div>
-    </div>
-    <!-- <%- include('../components/footer') %> -->
+        <%- include('../components/footer') %>
 </body>
 <script>
     function handletabs(el) {

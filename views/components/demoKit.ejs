@@ -113,6 +113,122 @@
             float: right;
             margin: 3% 20% 0 0;
         }
+
+
+        /* mobile version */
+@media (max-width:1300px){
+        .demoFormpart>h2 {
+    font-size: 26px;
+        }
+        .eachDetails>label {
+    font-size: 18px;
+    padding: 3.3% 3%;
+    }
+    .eachDetails>input, select, textarea {
+    font-size: 18px;
+    }
+    .demoFormpart {
+    width: 76%;
+    margin: 2% auto;
+    padding: 2% 0 2% 0;
+    }
+}
+@media (max-width:1200px){
+.demoFormpart>h2 {
+    font-size: 25px;
+    padding: 2% 0 0 0;
+}
+.eachDetails>input, select, textarea {
+    font-size: 16px;
+    padding: 4% 3%;
+}
+.demoImg>img {
+    width: 96%;
+    margin: 24% 0 0;
+}
+.eachDetails>label {
+    font-size: 18px;
+    padding: 3.3% 2%;
+}
+}
+@media (max-width:1100px){
+.demoFormpart>h2 {
+    font-size: 24px;
+    padding: 2% 0 0 0;
+}
+form>button {
+    padding: 2.7% 7.5%;
+    margin: 3% 35% 0 0;
+}
+#demoKitClose {
+    width: 40px;
+}
+}
+@media (max-width:900px){
+    .demoImg>img {
+    width: 100%;
+    margin: 24% 0 0;
+}
+form>button {
+    padding: 2.7% 7.5%;
+    margin:5% 30% 3% 0;
+}
+.eachDetails>label {
+    font-size: 16px;
+    padding: 3.3% 2%;
+}
+.eachDetails>input, select, textarea {
+    font-size: 14px;
+    padding: 5% 3%;
+}
+.demoFormpart>h2 {
+    font-size: 23px;
+    padding: 3% 0 0 0;
+}
+.demoFormpart {
+    width: 90%;
+
+}
+}
+@media (max-width:700px){
+    .demoFormpart {
+    width: 95%;
+}
+.demoFormpart {
+    padding: 5% 0 8% 0;
+}
+}
+@media (max-width:600px){
+.demoImg {
+    display: none;
+}
+.demoUserDetails>form {
+    width: 100%;
+}
+.demoUserDetails {
+    align-items: center;
+}
+form>button {
+    padding: 2.5% 7%;
+}
+}
+@media (max-width:500px){
+.Details {
+    flex-direction: column;
+}
+.eachDetails {
+    width: 100%;
+    margin: 0 auto;
+}
+.eachDetails>input, select, textarea {
+    font-size: 14px;
+    padding: 3.5% 3%;
+}
+.demoUserDetails>form {
+    width: 60%;
+}
+}
+
     </style>
     <title>demokit</title>
 </head>
@@ -179,7 +295,7 @@
                                 <input name="firstname" type="text" placeholder="First Name" required>
                             </div>
                             <div class="eachDetails">
-                                <label style="visibility: hidden;">Last</label>
+                                <label  >Last Name</label>
                                 <input name="lastname" type="text" placeholder="Last Name" required>
                             </div>
                         </section>
