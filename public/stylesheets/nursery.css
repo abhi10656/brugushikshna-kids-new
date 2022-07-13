@@ -313,12 +313,8 @@
         padding: 1% 10%;
         margin: 5% 0 0;
     }
-<<<<<<< HEAD
-    .nursery-sec2mainMob .owl-carousel .owl-item img {
-=======
 
     .nursery-sec2maincards .owl-carousel .owl-item img {
->>>>>>> c924578d95860f42006faca1ce077c8142af1628
         display: block;
         width: 81%;
         margin: auto;
@@ -365,7 +361,6 @@
         padding: 2% 6%;
         margin: 3% 2% 0;
     }
-<<<<<<< HEAD
     .nursery-sec2mainMob .owl-carousel .owl-nav button.owl-next span{
         display: none;
     }
@@ -377,9 +372,8 @@
     }
     
     .nursery-sec2mainMob .owl-carousel .owl-nav button.owl-prev{
-=======
 
-    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-next span {
+    /* .nursery-sec2maincards .owl-carousel .owl-nav button.owl-next span { */
         display: none;
     }
 
@@ -392,7 +386,6 @@
     }
 
     .nursery-sec2maincards .owl-carousel .owl-nav button.owl-prev {
->>>>>>> c924578d95860f42006faca1ce077c8142af1628
         height: 40px;
         width: 40px;
         background-image: url('../../assests/home/leftActive.png');
@@ -402,13 +395,10 @@
         top: 40%;
 
     }
-<<<<<<< HEAD
     
     .nursery-sec2mainMob .owl-carousel .owl-nav button.owl-next{
-=======
 
-    .nursery-sec2maincards .owl-carousel .owl-nav button.owl-next {
->>>>>>> c924578d95860f42006faca1ce077c8142af1628
+    /* .nursery-sec2maincards .owl-carousel .owl-nav button.owl-next { */
         height: 40px;
         width: 40px;
         background-image: url('../../assests/home/rightActive.png');
@@ -493,12 +483,8 @@
     .MobileCards {
         padding: 2% 10%;
     }
-<<<<<<< HEAD
-    .nursery-sec2mainMob .owl-carousel .owl-item img {
-=======
 
     .nursery-sec2maincards .owl-carousel .owl-item img {
->>>>>>> c924578d95860f42006faca1ce077c8142af1628
         width: 69%;
     }
 }
