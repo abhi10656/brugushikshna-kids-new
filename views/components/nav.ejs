@@ -94,7 +94,8 @@
                 display: block;
             }
             .navContent {
-    width: 48%;
+    width: 0%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -113,10 +114,10 @@
             <a class="navhover" href="/contact">Contact Us</a>
         </div>
     </div>
-     <!-- <div class="mobileNav">
+     <div class="mobileNav">
         <div class="navmob">
             <div class="menuImgs">
-                <img class="menuMob" src="../../assests/navbar/menuMob.svg" alt="menubar">
+                <img class="menuMob" onclick="opentag()"src="../../assests/navbar/menuMob.svg" alt="menubar">
                 <img src="../../assests/navbar/brugusikshan logo.png" alt="brugusikshanlogo">
             </div>
             <div class="navContent">
@@ -125,7 +126,7 @@
                 <a class="navhover" href="/contact">Contact Us</a>
             </div>
         </div>
-    </div>  -->
+    </div> 
 </body>
 <script>
     let activepage = window.location.pathname;
@@ -143,6 +144,22 @@
             }
         }
     })
+</script>
+
+
+<!-- mobile -->
+
+<script>
+  function opentag()
+  {
+    let clickopen=document.querySelectorAll('.navContent');
+    clickopen.style.overflow="vissible";
+
+    
+  }
+  opentag()
+
+    
 </script>
 
 </html>

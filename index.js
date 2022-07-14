@@ -42,7 +42,7 @@ app.get('/LKG', function (req, res) {
 app.get('/UKG', function (req, res) {
   res.render('innerpages/UKG');
 });
-app.get('/grade1', function (req, res) {
+app.get('git', function (req, res) {
   res.render('innerpages/grade1');
 });
 app.get('/grade2', function (req, res) {
