@@ -39,7 +39,7 @@
                                 <div class="contact-formmain">
                                     <div class="contact-form">
                                         <label for="Phone Number" class="labelname">Phone Number</label><br>
-                                        <input type="telephone" id="name" pattern="[0-9]{3}" class="name"
+                                        <input type="telephone" id="name" pattern="[6-9]{1}[0-9]{9}" class="name"
                                             name="Telephone" required>
                                     </div>
                                     <div class="contact-form">
@@ -70,7 +70,7 @@
             <script>
                 function validation() {
 
-                    let result = document.contact - formparent.value;
+                    let result = document.contact-formparent.value;
                     if (result == " ") {
                         window.alert("please fill all  details ");
                         return false
