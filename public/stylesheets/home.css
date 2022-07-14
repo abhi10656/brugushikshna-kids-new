@@ -261,6 +261,18 @@
     width: 50%;
     padding: 7% 0%;
 }
+.section6carousel .owl-theme .owl-dots .owl-dot.active span
+{
+    outline-offset: 4px;
+    background: #FD7777!important;
+    width: 9px;
+    height: 9px;
+    outline: 2px solid pink;
+}
+.section6carousel .owl-theme .owl-dots .owl-dot span
+ {
+    background:#FEBEBE;
+}
 
 /* -----------mobile-version----------- */
 
