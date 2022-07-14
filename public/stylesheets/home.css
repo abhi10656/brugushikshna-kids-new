@@ -150,8 +150,12 @@
     gap: 5%;
     justify-content: space-evenly;
 }
-.eachGrade{
+.eachGrade-Atags{
+    text-decoration: none;
     width: 23%;
+}
+.eachGrade{
+    width: 100%;
     margin: 0 0 3%;
     padding: 1% 0 2%;
     border-radius: 14px;
@@ -404,7 +408,7 @@
     .numberFour {
         text-align: left;
     }
-    .eachGrade {
+    .eachGrade-Atags {
         width: 32%;
     }
     .section5img>img {
@@ -563,7 +567,7 @@
         gap: 3%;
         margin: 4% 0 0;
     } 
-    .eachGrade {
+    .eachGrade-Atags {
         width: 51%;
     }
     .section5-sub-mob {
@@ -589,7 +593,7 @@
     .section5-sub-mob .owl-carousel .owl-nav button.owl-next{
         right: 0%;
     } 
-    .eachGrade {
+    .eachGrade-Atags {
         width: 66%;
     }
     /* .section6carousel {
