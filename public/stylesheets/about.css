@@ -16,7 +16,7 @@
 }
 
 .about-parent {
-    padding: 11% 3% 0 3%;
+    padding: 7% 3% 0 3%;
 }
 
 .about-maincontainer {
@@ -423,6 +423,9 @@
     .about-sec5parent {
         margin: 4%;
     }
+    .about-maincontainer {
+        padding: 6%;
+    }
 }
 
 @media(max-width:800px) {
@@ -495,11 +498,18 @@
     .about-sec4profilediscription {
         padding: 0 21%;
     }
+    .about-maincontainer {
+        padding: 8%;
+    }
 }
 
 @media(max-width:700px) {
     .about-sec4parentprofile-mobile {
         display: contents;
+    }
+    .about-sec1parentcontents {
+        text-align: center;
+        padding: 0 5%;
     }
 
     .about-sec4parentprofile {
@@ -565,10 +575,8 @@
         background-size: 100% 100%;
     }
 
-    .owl-theme .owl-nav [class*=owl-]:hover {
+    .about-sec4parentprofile-mobile .owl-theme .owl-nav [class*=owl-]:hover {
         background-color: transparent !important;
-
-
     }
 
     .about-sec4parentprofile-mobile .owl-carousel .owl-nav button.owl-next span {
@@ -613,6 +621,9 @@
     .about-sec3cardbackimg3 {
         width: 65%;
         margin: 0 auto;
+    }
+    .about-parent {
+        padding: 0% 0% 0 0%;
     }
 
     .about-sec4parentprofile-mobile .owl-carousel .owl-item img {
@@ -660,11 +671,7 @@
         margin: 8% 0 0 12%;
 
     }
-
-
-
-
-
+   
     .about-sec3cards-mobile .owl-carousel .owl-nav button.owl-prev {
         height: 35px;
         width: 35px;
@@ -720,7 +727,7 @@
 
     .about-sec1heading {
         font-family: 'Comic Sans MS';
-        padding: 6% 22% 0 0;
+        padding: 0% 22% 0 0;
     }
 
     .about-sec2para {
@@ -744,10 +751,6 @@
 
     .about-sec5background {
         height: 70vh;
-    }
-
-    .about-parent {
-        padding: 7% 0% 0 0%;
     }
 
     .about-sec1img {
@@ -815,7 +818,8 @@
 
     .about-sec1heading {
         font-family: 'Comic Sans MS';
-        padding: 6% 22% 0 0;
+        padding: 0% 2% 0 0;
+        font-size: 20px;
     }
 
     .about-sec3cards-mobile .owl-carousel .owl-nav button.owl-next span {
