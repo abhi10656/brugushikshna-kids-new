@@ -16,7 +16,7 @@
 
 .homeMain {
     position: relative;
-    padding: 7% 0 0;
+    padding: 0% 0 0;
 }
 .sectionBg{
     background: url('../../assests/home/homeMainBg.svg');
@@ -675,7 +675,7 @@
         font-size: 14px;
     }
     .homeSection1 {
-        padding: 5% 11% 96% 9%;
+        padding: 0% 11% 96% 9%;
     } 
     .homeSection2 {
         padding: 1% 3%;

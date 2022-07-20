@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="39" viewBox="0 0 39 39">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb9b9"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_6419" data-name="Group 6419" transform="translate(-45 -313)">
+    <circle id="Ellipse_256" data-name="Ellipse 256" cx="19.5" cy="19.5" r="19.5" transform="translate(45 313)" fill="url(#linear-gradient)"/>
+    <path id="Icon_awesome-question" data-name="Icon awesome-question" d="M8.036,0A6.849,6.849,0,0,0,1.952,3.218.849.849,0,0,0,2.135,4.38L3.66,5.536a.848.848,0,0,0,1.175-.147C5.721,4.28,6.378,3.641,7.761,3.641c1.088,0,2.433.7,2.433,1.754,0,.8-.658,1.207-1.732,1.809-1.252.7-2.909,1.576-2.909,3.761v.346a.848.848,0,0,0,.848.848H8.963a.848.848,0,0,0,.848-.848v-.2c0-1.515,4.428-1.578,4.428-5.678C14.24,2.342,11.037,0,8.036,0ZM7.682,13.2a2.449,2.449,0,1,0,2.449,2.449A2.452,2.452,0,0,0,7.682,13.2Z" transform="translate(56.48 323.45)" fill="#f88"/>
+  </g>
+</svg>

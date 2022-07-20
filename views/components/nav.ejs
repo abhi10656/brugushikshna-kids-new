@@ -50,6 +50,10 @@
             text-decoration: none;
         }
 
+        .mobileNav {
+            display: none;
+        }
+
         @media screen and (max-width:1100px) {
             .navhover {
                 font-size: 21px;
@@ -74,6 +78,7 @@
             .navhover {
                 font-size: 19px;
             }
+
         }
 
         @media screen and (max-width:580px) {
@@ -81,24 +86,109 @@
                 display: none;
             }
 
-            .menuImgs>img {
-                display: block;
+            .mobileNav {
+                display: contents;
+            }
+
+
+
+            .navmoblogo {
+
+
+                width: 27%;
             }
 
             .menuImgs {
                 display: flex;
-                justify-content: space-between;
-                padding: 2% 3%;
+                gap: 48%;
+                padding: 2% 0 2% 6%;
             }
-            .navContent>.navhover{
-                display: block;
-            }
+
+
             .navContent {
-    width: 0%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 9999;
+                top: 0;
+                left: 0;
+                background-color: white;
+                overflow-x: hidden;
+                transition: 0.5s;
+            }
+
+            .navhover {
+                padding: 8px 8px 8px 20px;
+                text-decoration: none;
+                font-size: 15px;
+                display: block;
+                transition: 0.3s;
+                margin: 1% 0 0% 0;
+            }
+
+            .navmoblogo-open {
+                width: 32%;
+                margin: 6% 0 9% 9%;
+            }
+
+            .line {
+                background-color: #BBBBBB;
+                width: 100%;
+                height: 1px;
+            }
+
+            .navmob-openimg {
+                display: flex;
+                padding: 4% 0 0 8%;
+                align-items: end;
+            }
+
+            .logo-close {
+                display: flex;
+                gap: 40%;
+                align-items: flex-start;
+            }
+
+            .navmoblogo-close {
+                width: 10%;
+                margin: 5% 0 0 0;
+            }
+
+            .footer-navmob {
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                justify-content: flex-end;
+            }
+
+            .footer-navmob .footer-navmoblnk {
+                color: grey;
+                text-decoration: none;
+                padding: 3%;
+                font-size: 13px;
+            }
+        }
+
+        @media screen and (max-width:400px) {
+
+
+            .navhover {
+
+                font-size: 13px;
+            }
+
+            .navmob-openimg>img {
+
+                width: 10%;
+
+            }
+
+            .menuMob {
+                width: 7%;
+                margin: 0 4%;
+            }
+
         }
     </style>
 </head>
@@ -114,19 +204,44 @@
             <a class="navhover" href="/contact">Contact Us</a>
         </div>
     </div>
-     <div class="mobileNav">
+
+    <!-- mobile version -->
+
+    <div class="mobileNav">
         <div class="navmob">
             <div class="menuImgs">
-                <img class="menuMob" onclick="opentag()"src="../../assests/navbar/menuMob.svg" alt="menubar">
-                <img src="../../assests/navbar/brugusikshan logo.png" alt="brugusikshanlogo">
+                <img class="menuMob" onclick="opennav()" src="../../assests/navbar/menuMob.svg" alt="menubar">
+                <img class="navmoblogo" src="../../assests/navbar/brugusikshan logo.png" alt="brugusikshanlogo">
+
             </div>
-            <div class="navContent">
-                <a class="navhover" href="/">Home</a>
-                <a class="navhover" href="/about">About Us</a>
-                <a class="navhover" href="/contact">Contact Us</a>
+            <div class="navContent" id="open">
+                <div class="logo-close">
+                    <img class="navmoblogo-open" src="../../assests/navbar/brugusikshan logo.png"
+                        alt="brugusikshanlogo">
+                    <img class="navmoblogo-close" onclick="closenav()" src="../../assests/navbar/closebutton.svg"
+                        alt="brugusikshanlogo">
+
+                </div>
+                <span class="line"></span>
+                <div class="navmob-openimg"> <img src="../../assests/navbar/aboutmob.svg" alt="logoofabout">
+                    <a class="navhover" href="/about">About Us</a>
+                </div>
+                <div class="navmob-openimg"> <img src="../../assests/navbar/contactmob.svg" alt="logoofabout">
+                    <a class="navhover" href="/contact">Contact Us</a>
+                </div>
+                <div class="navmob-openimg"> <img src="../../assests/navbar/shippingmob.svg" alt="logoofabout">
+                    <a class="navhover" href="/shipping">Shipping Policy</a>
+                </div>
+                <div class="navmob-openimg"> <img src="../../assests/navbar/faqsmob.svg" alt="logoofabout">
+                    <a class="navhover" href="/faqs">FAQs</a>
+                </div>
+                <div class="footer-navmob">
+                    <p class="footer-navmoblnk">Phone: +91-9380060977</p>
+                    <p class="footer-navmoblnk"> Email Us: Study@studique.Com</p>
+                </div>
             </div>
         </div>
-    </div> 
+    </div>
 </body>
 <script>
     let activepage = window.location.pathname;
@@ -150,16 +265,16 @@
 <!-- mobile -->
 
 <script>
-  function opentag()
-  {
-    let clickopen=document.querySelectorAll('.navContent');
-    clickopen.style.overflow="vissible";
+    function opennav() {
+        document.getElementById('open').style.width = "80%";
+        document.getElementById('open').style.flexDirection = "column";
+    }
+    function closenav() {
+        document.getElementById('open').style.width = "0%";
+    }
 
-    
-  }
-  opentag()
 
-    
+
 </script>
 
 </html>
