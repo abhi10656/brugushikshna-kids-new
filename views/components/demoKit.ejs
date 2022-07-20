@@ -284,13 +284,12 @@ form>button {
                 var inputtags = x.querySelectorAll('input,select,textarea');
                 inputtags.forEach((el) => {
                     let element = el.value;
-
                     if (el.value === "") {
                         validation = false;
                     } else {
                         kidDetails[el.name] = element;
                     }
-                    console.log(kidDetails)
+                    console.log(kidDetails);
                 });
 
                 if (validation) {
