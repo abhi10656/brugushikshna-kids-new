@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 
 // use res.render to load up an ejs view file
 app.use(express.static(__dirname + '/public'));
-app.use(express.static(__dirname + '/public'));
+// app.use(express.static(__dirname + '/public'));
 
 
 
@@ -42,7 +42,7 @@ app.get('/LKG', function (req, res) {
 app.get('/UKG', function (req, res) {
   res.render('innerpages/UKG');
 });
-app.get('git', function (req, res) {
+app.get('/grade1', function (req, res) {
   res.render('innerpages/grade1');
 });
 app.get('/grade2', function (req, res) {

@@ -277,7 +277,7 @@ form>button {
             let demokit = document.getElementById('demoFormDetails');
             demokit.addEventListener('submit', validate);
             let kidDetails = {}
-            function validate(e) {
+            function validate(e)   {
                 e.preventDefault();
                 let validation = true;
                 var x = document.getElementById('demoFormDetails');
@@ -295,7 +295,7 @@ form>button {
                 if (validation) {
                     $.ajax({
                         url: "",
-                        method: 'POST',
+                        method:POST,
                         data: kidDetails,
                         error: function (result) {
                             console.log('result', result)

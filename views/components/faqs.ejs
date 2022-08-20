@@ -314,6 +314,10 @@
                 font-size: 14px;
             }
 
+            .faqQA {
+                margin: 0 0 7%;
+            }
+
         }
 
         @media (max-width:400px) {
@@ -372,7 +376,7 @@
                 </div>
                 <div class="faqNav">
                     <div class="faqpart">
-                        <div class="faqQA">
+                        <!-- <div class="faqQA">
                             <div class="faqQ">
                                 <div class="quetsion">
                                     <img src="../../assests/home/one.svg" alt="one">
@@ -477,8 +481,8 @@
                                 <p>As the universal language is English. All the worksheets will be in a single language
                                     that is English.</p>
                             </div>
-                        </div>
-                        <div class="faqQA">
+                        </div> -->
+                        <!-- <div class="faqQA">
                             <div class="faqQ">
                                 <div class="quetsion">
                                     <img src="../../assests/faqs/nine.svg" alt="nine">
@@ -504,7 +508,7 @@
                                     you would provide.
                                 </p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -517,11 +521,130 @@
         <%- include('../components/footer') %>
 
 </body>
+
+<script>
+    //practice dynamically adding data in faqs
+    const faqsContent = [
+        {
+            question: `Is Brugusikshan applicable to me?`,
+            answer: `We are providing the worksheets from Nursery to Grade 5. These worksheets are even applicable to all category children.`,
+            src: `../../assests/home/one.svg`
+        },
+        {
+            question: `How do I get started with Brugusikshan?`,
+            answer: `It's pretty simple! You must register with us and pay the required amount to get the worksheet kit to your doorstep`,
+            src: `../../assests/home/two.svg`
+        },
+        {
+            question: `On what basis the worksheets are created?`,
+            answer: `These worksheets are based on the CBSE syllabus. The concepts will be according to the topics that are mentioned in the CBSE curriculum.`,
+            src: `../../assests/home/three.svg`
+        },
+        {
+            question: `Can I buy necessary worksheets frequently?`,
+            answer: `We will provide worksheets in bulk, so you might not need them frequently. But if you are in need. You need to buy the worksheet kit once again.`,
+            src: `../../assests/home/four.svg`
+        },
+        {
+            question: `Should I come physically to pick up the worksheet, or the company will provide it to the doorstep?`,
+            answer: `If you are near to our HQ, you can buy the product physically, or we will deliver the worksheet kit to the registered home address.`,
+            src: `../../assests/home/five.svg`
+        },
+        {
+            question: `Can I pay through cash or online payment?`,
+            answer: `We are following an online payment method to clarify the product confirmation you have purchased.`,
+            src: `../../assests/home/six.svg`
+        },
+        {
+            question: `Is it an Indian-based company?`,
+            answer: `Yes, Brugusikshan is an Indian-based company, and it is led by CEO Ranga Prasad and co-founder Shilpa Raj.`,
+            src: `../../assests/faqs/seven.svg`
+        },
+        {
+            question: `In what language are the worksheets available?`,
+            answer: `As the universal language is English. All the worksheets will be in a single language that is English.`,
+            src: `../../assests/faqs/eight.svg`
+        },
+        {
+            question: `Which subjects are included in the worksheet kit?`,
+            answer: `The subjects we include in the worksheet kit are Mathematics, English and Environmental Science.`,
+            src: `../../assests/faqs/nine.svg`
+        },
+        {
+            question: `How do I get notification on the upcoming update?`,
+            answer: `We will inform you about the update through a Newsletter through the registered mail you would provide.`,
+            src: `../../assests/faqs/ten.svg`
+        }
+    ]
+
+    faqsContent.forEach((el) => {
+        let faqpart = document.querySelector('.faqpart');
+
+        //faqa
+        let faqQA = document.createElement('div');
+        faqQA.classList.add('faqQA')
+
+        let faqQ = document.createElement('div');
+        faqQ.classList.add('faqQ')
+        // console.log(faqQ,"faqQ");
+
+        let quetsion = document.createElement('div');
+        quetsion.classList.add('quetsion');
+
+        //number img
+        let numimg = document.createElement('img');
+        numimg.alt = "numbers"
+
+        let arrow = document.createElement('img');
+        arrow.alt = "arrow"
+        arrow.src = "../../assests/faqs/downarrow.svg";
+
+        //p question
+        let questionP = document.createElement('p');
+
+        //faqA
+        let faqA = document.createElement("div");
+        faqA.classList.add('faqA');
+
+        //faqA p
+        let answerP = document.createElement('p');
+
+        //appending elements into question div
+        quetsion.appendChild(numimg);
+        quetsion.appendChild(questionP);
+
+        //appending elements into faqQ div
+        faqQ.appendChild(quetsion);
+        faqQ.appendChild(arrow);
+
+        //appending answer
+        faqA.appendChild(answerP);
+
+        //append q and a in faqQA
+        faqQA.appendChild(faqQ);
+        faqQA.appendChild(faqA);
+
+        numimg.src = `${el.src}`;
+        questionP.innerText = el.question;
+        answerP.innerText = el.answer;
+        faqpart.appendChild(faqQA);
+    })
+
+
+</script>
+
 <script>
     let allfaqQA = document.querySelectorAll(".faqQA");
     allfaqQA.forEach((el) => {
         el.addEventListener('click', () => {
-            el.classList.toggle('active')
+            if (el.classList.contains('active')) {
+                el.classList.remove('active')
+            } else {
+                allfaqQA.forEach((e) => {
+                    e.classList.remove('active');
+                })
+                el.classList.add('active');
+            }
         })
     })
 </script>
